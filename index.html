@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#070b24">
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,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">
+<link rel="icon" type="image/svg+xml" sizes="any" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cdefs%3E%3ClinearGradient id='e' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233ff0ff'/%3E%3Cstop offset='.55' stop-color='%234d7cff'/%3E%3Cstop offset='1' stop-color='%23b57bff'/%3E%3C/linearGradient%3E%3ClinearGradient id='f' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23232f96'/%3E%3Cstop offset='1' stop-color='%230b1038'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='60,6 108,22 108,62 90,94 60,114 30,94 12,62 12,22' fill='url(%23f)' stroke='url(%23e)' stroke-width='8' stroke-linejoin='round'/%3E%3Cpolygon points='60,10 104,25 60,38' fill='%23fff' opacity='.1'/%3E%3Ccircle cx='54' cy='52' r='24' fill='%230b1038' stroke='%23fff' stroke-width='9'/%3E%3Ccircle cx='54' cy='52' r='12' fill='%23c98bff'/%3E%3Cpath d='M73 71 91 89' stroke='%23fff' stroke-width='12' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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">
+<title>مندسّ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#070b24;--bg2:#0d1440;--panel:rgba(20,28,82,.78);--panel2:rgba(30,40,110,.55);
+  --line:rgba(140,160,255,.2);--text:#eef1ff;--muted:#a3afe0;
+  --violet:#a66bff;--blue:#4d7cff;--cyan:#3ff0ff;--pink:#ff7ac8;--ok:#5dffb0;--warn:#ffc65a;--bad:#ff6b8a;
+  --eye:#5fe6ff;--r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,html[data-theme]{background:#070b24!important;color-scheme:dark!important;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+/* اللعبة غامقة دائمًا، حتى لو كانت الصفحة المستضيفة بمظهر فاتح؛ isolation يبقي طبقات الخلفية فوق لون body */
+body{isolation:isolate;background:#070b24!important;min-height:100vh;color:#eef1ff!important;font-family:'Tajawal','Segoe UI',Tahoma,Arial,system-ui,sans-serif;line-height:1.7;overflow-x:hidden;-webkit-tap-highlight-color:transparent}
+/* خلفية ثابتة بعنصر مستقل: background-attachment:fixed لا يعمل جيدًا على iOS */
+body::after{content:"";position:fixed;top:0;left:0;right:0;bottom:0;z-index:-2;background:
+  radial-gradient(900px 500px at 85% -10%,rgba(166,107,255,.22),transparent 60%),
+  radial-gradient(700px 500px at 0% 20%,rgba(63,240,255,.12),transparent 60%),
+  radial-gradient(800px 600px at 50% 120%,rgba(77,124,255,.2),transparent 60%),var(--bg)}
+body::before{content:"";position:fixed;top:0;left:0;right:0;bottom:0;z-index:-1;pointer-events:none;opacity:.35;
+  background-image:linear-gradient(rgba(120,140,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(120,140,255,.07) 1px,transparent 1px);
+  background-size:34px 34px;-webkit-mask-image:linear-gradient(to bottom,#000,transparent 85%);mask-image:linear-gradient(to bottom,#000,transparent 85%)}
+button{font-family:inherit;cursor:pointer;color:inherit;touch-action:manipulation}
+button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--cyan);outline-offset:2px}
+.hidden{display:none!important}
+.app{position:relative;max-width:560px;margin:0 auto;padding:12px 16px 48px}
+@media(min-width:960px),(min-width:700px) and (orientation:landscape){.app{max-width:1080px}}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--line);
+  background:var(--panel2);padding:13px 22px;border-radius:999px;font-size:1.05rem;font-weight:700;
+  transition:transform .15s,box-shadow .2s,background .2s,opacity .2s;min-height:48px}
+@media(hover:hover){.btn:not(:disabled):hover{transform:translateY(-2px);box-shadow:0 6px 22px rgba(77,124,255,.3)}}
+.btn:not(:disabled):active{transform:scale(.97)}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.btn.primary{border:0;background:linear-gradient(135deg,var(--violet),var(--blue));box-shadow:0 6px 24px rgba(166,107,255,.4)}
+.btn.wide{width:100%}
+.btn svg{width:20px;height:20px}
+
+/* ---------- screens ---------- */
+.screen{display:none;animation:fadeUp .45s ease}
+.screen.active{display:block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:16px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+h2{font-size:1.35rem;font-weight:800}
+.muted{color:var(--muted)}
+
+/* ---------- start ---------- */
+.hero{text-align:center;padding-top:2vh}
+.seg{display:inline-flex;gap:4px;padding:4px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid var(--line)}
+.seg button{border:0;background:transparent;padding:7px 18px;border-radius:999px;font-weight:700;font-size:.95rem;color:var(--muted);min-height:38px;transition:.2s}
+.seg button.on{background:linear-gradient(135deg,var(--violet),var(--blue));color:#fff}
+.logo{font-size:clamp(3.2rem,15vw,5.4rem);font-weight:900;letter-spacing:1px;line-height:1.15;position:relative;display:inline-block;margin-top:6px;
+  background:linear-gradient(135deg,#fff,var(--cyan) 40%,var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 0 18px rgba(166,107,255,.55))}
+.logo::after{content:attr(data-text);position:absolute;top:0;left:0;right:0;bottom:0;color:var(--violet);opacity:0;animation:glitch 4s infinite;-webkit-text-fill-color:var(--violet)}
+@keyframes glitch{0%,90%,100%{opacity:0;transform:none}92%{opacity:.6;transform:translate(4px,-2px);clip-path:inset(20% 0 50% 0)}95%{opacity:.5;transform:translate(-4px,2px);clip-path:inset(60% 0 10% 0)}}
+.tagline{color:var(--muted);font-size:1.02rem;margin:6px auto 10px;max-width:440px}
+.hero-bot{width:120px;height:120px;margin:4px auto 10px;animation:float 3.6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-8px)}}
+.q{font-weight:800;font-size:1.1rem;margin-bottom:8px}
+.gender{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:340px;margin:0 auto 14px}
+.gopt{display:flex;flex-direction:column;align-items:center;gap:2px;padding:10px 6px;border-radius:18px;border:2px solid var(--line);background:var(--panel2);font-weight:800;font-size:1.05rem;transition:.2s}
+.gopt .av{width:72px;height:72px}
+@media(hover:hover){.gopt:hover{border-color:var(--cyan)}}
+.gopt.on{border-color:var(--cyan);box-shadow:0 0 20px rgba(63,240,255,.35);background:rgba(63,240,255,.1)}
+.how{margin:18px auto 0;text-align:start;max-width:480px}
+.how summary{cursor:pointer;font-weight:700;color:var(--cyan);list-style:none;text-align:center;padding:8px 0}
+.how summary::-webkit-details-marker{display:none}
+.how ul{margin-top:10px;padding-inline-start:18px;color:var(--muted)}
+.how li{margin:4px 0}
+.badge-row{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:12px}
+.chip{font-size:.8rem;padding:4px 12px;border-radius:999px;border:1px solid var(--line);color:var(--muted);background:rgba(255,255,255,.03)}
+
+/* ---------- select ---------- */
+.sel-top{display:flex;align-items:center;gap:16px;margin:10px 0 14px}
+.sel-prev{width:96px;height:96px;flex:none;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.08),transparent 70%);border:2px solid var(--line);padding:4px}
+label.field{display:block;font-weight:700;margin-bottom:6px}
+input.txt{width:100%;font-family:inherit;font-size:1.1rem;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:rgba(5,10,40,.6);color:var(--text);outline:none}
+input.txt:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(63,240,255,.15)}
+.swatches{display:flex;gap:10px;flex-wrap:wrap;margin:6px 0 4px}
+.sw{width:42px;height:42px;border-radius:50%;border:3px solid transparent;transition:transform .15s}
+.sw.on{border-color:#fff;transform:scale(1.1);box-shadow:0 0 16px currentColor}
+.team-list{display:grid;gap:10px;margin:16px 0}
+@media(min-width:620px){.team-list{grid-template-columns:1fr 1fr}}
+.tm{display:flex;gap:12px;align-items:center;padding:10px 12px;border-radius:16px;background:rgba(255,255,255,.035);border:1px solid var(--line)}
+.tm .av{width:54px;height:54px;flex:none}
+.tm b{display:block}
+.tm small{color:var(--muted);display:block;line-height:1.5}
+
+/* ---------- HUD ---------- */
+#hud{position:-webkit-sticky;position:sticky;top:0;z-index:20;margin:-12px -16px 12px;padding:10px 16px 8px;background:rgba(7,11,36,.92);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hud-top{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px}
+.meter{flex:1 1 170px;display:flex;align-items:center;gap:8px;min-width:0}
+.meter .lbl{font-size:.8rem;font-weight:700;white-space:nowrap}
+.bar{flex:1;height:10px;border-radius:99px;background:rgba(255,255,255,.08);overflow:hidden}
+.bar i{display:block;height:100%;width:100%;border-radius:99px;background:linear-gradient(90deg,var(--cyan),var(--blue));transition:width .8s,background .8s}
+.meter b{font-size:.95rem;min-width:30px;text-align:center}
+.pill{display:inline-flex;align-items:center;gap:4px;font-size:.8rem;font-weight:700;padding:4px 10px;border-radius:99px;background:var(--panel2);border:1px solid var(--line);white-space:nowrap}
+.pill svg{width:15px;height:15px}
+.trust{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px;margin-top:8px}
+.tr{min-width:0;display:flex;flex-direction:column;align-items:center;padding:4px 2px;border-radius:12px;background:rgba(255,255,255,.03);transition:background .4s}
+.tr .av{width:30px;height:30px}
+.tr small{font-size:.68rem;line-height:1.25;text-align:center;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tr small b{font-weight:800}
+.tr .tb{width:80%;height:4px;border-radius:9px;background:rgba(255,255,255,.1);margin-top:3px;overflow:hidden}
+.tr .tb i{display:block;height:100%;background:var(--ok);transition:width .8s,background .8s}
+.tr.flash{animation:flash .9s}
+@keyframes flash{30%{background:rgba(255,107,138,.3)}}
+.hud-cap{font-size:.65rem;color:var(--muted);text-align:center;margin-top:2px}
+
+/* ---------- Zill alert ---------- */
+.zill{position:fixed;left:50%;top:14px;transform:translate(-50%,-140%);z-index:60;display:flex;align-items:center;gap:10px;
+  max-width:min(92vw,460px);padding:10px 16px;border-radius:14px;font-weight:700;font-size:.92rem;
+  background:linear-gradient(135deg,rgba(80,20,140,.95),rgba(40,8,80,.95));border:1px solid #b07cff;color:#f1e6ff;
+  box-shadow:0 0 30px rgba(166,107,255,.6);transition:transform .35s,visibility .35s;visibility:hidden;pointer-events:none}
+.zill.show{transform:translate(-50%,0);visibility:visible;animation:zflick 1.4s steps(1) infinite}
+.zill svg{width:22px;height:22px;flex:none}
+@keyframes zflick{0%{opacity:1}8%{opacity:.35}12%{opacity:1}55%{opacity:1}58%{opacity:.5}61%{opacity:1}}
+
+/* ---------- round ---------- */
+.round-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:8px;margin-bottom:12px}
+.round-head p{color:var(--muted);font-size:.95rem}
+.credits{display:flex;align-items:center;gap:6px;font-weight:700;font-size:.9rem}
+.credits span{display:flex;gap:5px}
+.dot{width:14px;height:14px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px var(--cyan);transition:.3s}
+.dot.used{background:transparent;border:2px solid var(--line);box-shadow:none}
+.round-grid{display:grid;gap:14px}
+@media(min-width:960px),(min-width:700px) and (orientation:landscape){.round-grid{grid-template-columns:1.15fr .85fr;align-items:start}.round-grid .chatwrap{position:-webkit-sticky;position:sticky;top:120px}}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.card{position:relative;text-align:start;border-radius:16px;padding:12px;min-height:150px;border:1px solid var(--line);
+  background:linear-gradient(160deg,rgba(40,52,140,.6),rgba(18,24,70,.7));display:flex;flex-direction:column;gap:4px;
+  transition:transform .2s,box-shadow .25s,border-color .25s;overflow:hidden}
+@media(hover:hover){.card:not(:disabled):hover{transform:translateY(-3px);border-color:var(--cyan);box-shadow:0 8px 26px rgba(63,240,255,.18)}}
+.card:disabled{cursor:default}
+.card .ic{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:rgba(63,240,255,.12);color:var(--cyan)}
+.card .ic svg{width:22px;height:22px}
+.card h3{font-size:1rem;font-weight:800;line-height:1.4}
+.card .tm-s{font-size:.75rem;color:var(--muted);display:flex;align-items:center;gap:4px}
+.card .tm-s svg{width:13px;height:13px}
+.card .hint{margin-top:auto;font-size:.8rem;color:var(--cyan);font-weight:700}
+.card p{font-size:.85rem;line-height:1.6;color:#dfe5ff}
+.card.open{grid-column:1/-1;order:2;min-height:0;border-color:rgba(63,240,255,.55);background:linear-gradient(160deg,rgba(30,70,140,.7),rgba(18,24,70,.8))}
+.card.fresh{animation:flip .5s ease}
+@keyframes flip{from{transform:rotateY(70deg);opacity:.2}to{transform:none;opacity:1}}
+.card.dim{opacity:.4}
+.card.decoy{background:linear-gradient(160deg,rgba(60,90,170,.35),rgba(18,24,70,.6));border-style:dashed}
+.card.decoy .ic{background:rgba(143,208,255,.15);color:#8fd0ff}
+.card.decoy .hint{color:#8fd0ff}
+.card.locked .ic{background:rgba(166,107,255,.18);color:var(--violet)}
+.card.locked .hint{color:var(--violet)}
+.open-row{display:flex;gap:10px;align-items:flex-start}
+.open-row .ic{flex:none}
+
+/* ---------- chat ---------- */
+.chatwrap{border-radius:var(--r);border:1px solid var(--line);background:rgba(10,16,52,.75);overflow:hidden}
+.chatwrap,#toVote,#vNext,#revNext,.msg{scroll-margin-top:170px;scroll-margin-bottom:12px}
+.chat-h{display:flex;align-items:center;gap:8px;padding:10px 14px;font-weight:800;font-size:.9rem;border-bottom:1px solid var(--line);background:rgba(255,255,255,.03)}
+.chat-h .live{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 8px var(--ok)}
+.chat{height:300px;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:12px;display:flex;flex-direction:column;gap:10px;scroll-behavior:smooth}
+@media(min-width:960px),(min-width:700px) and (orientation:landscape){.chat{height:min(56vh,520px)}}
+@media(max-height:500px){.chat{height:190px}.hud-cap{display:none}.tr .av{width:22px;height:22px}#hud{padding-top:6px;padding-bottom:4px}.round-grid .chatwrap{top:96px}.hero-bot{display:none}}
+.msg{display:flex;gap:8px;align-items:flex-end;animation:pop .3s ease}
+@keyframes pop{from{opacity:0;transform:translateY(8px) scale(.97)}to{opacity:1;transform:none}}
+.msg .mav{width:32px;height:32px;flex:none}
+.msg .mav .av{width:32px;height:32px}
+.bub{max-width:82%;min-width:0;padding:7px 12px;border-radius:16px;overflow-wrap:anywhere;word-break:break-word;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.06)}
+[dir=rtl] .bub{border-bottom-right-radius:4px}
+[dir=ltr] .bub{border-bottom-left-radius:4px}
+.bub b{font-size:.78rem;display:block;line-height:1.4}
+.bub p{font-size:.92rem;line-height:1.55}
+.msg.me{flex-direction:row-reverse}
+.msg.me .bub{background:linear-gradient(135deg,rgba(166,107,255,.35),rgba(77,124,255,.35))}
+[dir=rtl] .msg.me .bub{border-bottom-right-radius:16px;border-bottom-left-radius:4px}
+[dir=ltr] .msg.me .bub{border-bottom-left-radius:16px;border-bottom-right-radius:4px}
+.msg.sanad .bub{background:rgba(143,208,255,.12);border-color:rgba(143,208,255,.2)}
+.msg.sys{justify-content:center;font-size:.8rem;color:var(--muted);text-align:center;padding:2px 10px;border-radius:99px;background:rgba(255,255,255,.04);align-self:center}
+.msg.zillmsg{align-self:stretch;gap:10px;align-items:center;padding:8px 12px;border-radius:12px;background:rgba(90,30,160,.35);border:1px solid rgba(176,124,255,.5);color:#e8d9ff;font-size:.85rem;animation:pop .3s,zflick 2s steps(1) 2}
+.zl{display:inline-flex;align-items:center;gap:4px;font-weight:800;color:#d2b3ff;white-space:nowrap}
+.zl svg{width:16px;height:16px}
+.typing{display:flex;gap:4px;padding:10px 14px}
+.typing i{width:7px;height:7px;border-radius:50%;background:var(--muted);animation:blink 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes blink{0%,100%{opacity:.25}50%{opacity:1}}
+.chat-h span:nth-child(2){white-space:nowrap}
+.chat-skip{font-size:.72rem;line-height:1.3;color:var(--muted);margin-inline-start:auto;font-weight:500}
+
+/* ---------- vote ---------- */
+.ev-list{display:flex;flex-direction:column;gap:6px;margin:10px 0 4px;max-height:220px;overflow-y:auto}
+.ev{display:flex;gap:8px;align-items:flex-start;font-size:.85rem;padding:6px 10px;border-radius:10px;background:rgba(255,255,255,.04)}
+.ev em{font-style:normal;color:var(--cyan);font-weight:700;white-space:nowrap}
+.vote-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.vopt{display:flex;flex-direction:column;align-items:center;gap:4px;padding:12px 6px;border-radius:16px;border:1px solid var(--line);background:var(--panel2);transition:.2s}
+.vopt .av{width:56px;height:56px}
+.vopt b{font-size:.95rem}
+.vopt small{font-size:.7rem;color:var(--muted)}
+@media(hover:hover){.vopt:not(:disabled):hover{border-color:var(--pink);transform:translateY(-2px)}}
+.vopt.chosen{border-color:var(--pink);box-shadow:0 0 18px rgba(255,122,200,.4)}
+.vopt:disabled:not(.chosen){opacity:.45}
+.vopt.none .ic0{width:56px;height:56px;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,.06);color:var(--muted)}
+.vopt.none svg{width:28px;height:28px}
+#vchat{height:auto;max-height:340px;min-height:80px}
+
+/* ---------- reveal ---------- */
+.rev-stage{text-align:center;padding:10px 0}
+.rev-bot{width:180px;height:180px;margin:0 auto;transition:filter .6s}
+.rev-bot.frozen{filter:grayscale(.5) drop-shadow(0 0 22px rgba(166,107,255,.8));animation:shake .3s 4}
+@keyframes shake{25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+.reset{max-width:360px;margin:10px auto;text-align:center}
+.reset .bar{height:12px}
+.reset .bar i{width:0;background:linear-gradient(90deg,var(--violet),var(--cyan));transition:width .1s linear}
+.reset small{color:var(--muted)}
+#rchat{height:auto;max-height:none;min-height:60px}
+
+/* ---------- end ---------- */
+.end-badge{width:120px;height:120px;margin:10px auto 6px;filter:drop-shadow(0 0 24px var(--glow,#5dffb0))}
+.end-title{text-align:center;font-size:1.7rem;font-weight:900;line-height:1.3}
+.end-text{text-align:center;color:var(--muted);max-width:520px;margin:6px auto 18px}
+.dec-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0 20px}
+@media(min-width:760px){.dec-grid{grid-template-columns:repeat(3,1fr)}}
+.dec{padding:12px;border-radius:16px;background:rgba(255,255,255,.04);border:1px solid var(--line)}
+.dec b{display:block;font-size:1.6rem;font-weight:900;line-height:1.6}
+.dec span{font-size:.82rem;color:var(--muted);line-height:1.5;display:block}
+.dec.warn b{color:var(--warn)}.dec.good b{color:var(--ok)}.dec.bad b{color:var(--bad)}.dec.info b{color:var(--cyan)}
+.section-t{font-weight:800;font-size:1.15rem;margin:18px 0 8px;display:flex;align-items:center;gap:8px}
+.section-t::before{content:"";width:6px;height:20px;border-radius:9px;background:linear-gradient(var(--cyan),var(--violet))}
+.lessons{display:grid;gap:10px}
+@media(min-width:620px){.lessons{grid-template-columns:1fr 1fr}}
+.lesson{display:flex;gap:12px;padding:14px;border-radius:16px;background:linear-gradient(160deg,rgba(166,107,255,.14),rgba(63,240,255,.06));border:1px solid var(--line);animation:fadeUp .5s both}
+.lesson .ic{width:44px;height:44px;flex:none;border-radius:14px;display:grid;place-items:center;background:rgba(63,240,255,.12);color:var(--cyan)}
+.lesson .ic svg{width:26px;height:26px}
+.lesson h4{font-size:1rem;font-weight:800}
+.lesson p{font-size:.88rem;color:#d4dbff;line-height:1.6}
+.ai-note{margin:16px 0;padding:14px;border-radius:16px;border:1px dashed rgba(63,240,255,.4);display:flex;gap:12px;align-items:center;background:rgba(63,240,255,.05)}
+.ai-note .av{width:56px;height:56px;flex:none}
+.end-btns{display:grid;gap:8px}
+
+/* ---------- modal ---------- */
+.modal{position:fixed;top:0;left:0;right:0;bottom:0;z-index:50;display:flex;align-items:center;justify-content:center;padding:16px;background:rgba(3,6,24,.7);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .25s,visibility .25s}
+.modal.open{opacity:1;visibility:visible;pointer-events:auto}
+.mbox{width:100%;max-width:420px;max-height:100%;overflow-y:auto;text-align:center;padding:20px 18px;border-radius:22px;background:linear-gradient(160deg,#1b2470,#0f1544);border:1px solid var(--line);box-shadow:0 20px 60px rgba(0,0,0,.5);transform:scale(.92);transition:transform .25s}
+.modal.open .mbox{transform:none}
+.m-av{width:84px;height:84px;margin:0 auto 6px}
+.m-av:empty{display:none}
+.m-av .av{width:84px;height:84px}
+.mbox h3{font-size:1.15rem;font-weight:800;margin-bottom:4px}
+.mbox .mb{font-size:1.02rem;margin-bottom:14px}
+.mbox .mb small{display:block;color:var(--muted);font-size:.85rem;margin-top:4px}
+.mbtns{display:grid;gap:8px}
+
+/* ---------- avatars ---------- */
+.av{display:block;width:100%;height:100%}
+.eyefill{fill:var(--eye);transition:fill 1.8s ease}
+.sanad .eye{transform-box:fill-box;transform-origin:center;animation:eyeblink 5s infinite}
+@keyframes eyeblink{0%,94%,100%{transform:scaleY(1)}97%{transform:scaleY(.15)}}
+.sanad{filter:drop-shadow(0 0 8px rgba(143,208,255,.45))}
+.levels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;max-width:420px;margin:0 auto 6px}
+.lvl{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:62px;padding:8px 4px;border-radius:16px;border:2px solid var(--line);background:var(--panel2);font-weight:800;line-height:1.3;transition:.2s}
+.lvl small{font-weight:500;font-size:.74rem;color:var(--muted)}
+@media(max-width:340px){.lvl{font-size:.78rem}.lvl small{font-size:.66rem}}
+@media(max-width:300px){.levels{grid-template-columns:1fr}.lvl{min-height:44px}}
+[lang=en] .logo{font-size:clamp(2.3rem,13vw,5.4rem)}
+.lvl.on{border-color:var(--cyan);box-shadow:0 0 18px rgba(63,240,255,.3);background:rgba(63,240,255,.1)}
+@media(hover:hover){.lvl:hover{border-color:var(--cyan)}}
+.lvl-desc{color:var(--muted);font-size:.86rem;max-width:420px;margin:0 auto 14px;line-height:1.5}
+@media(max-width:480px){.meter{flex-basis:100%}}
+#clockPill{color:var(--cyan);font-variant-numeric:tabular-nums}
+#clockPill.urgent{color:var(--bad);border-color:var(--bad);animation:clockPulse 1s ease-in-out infinite}
+@keyframes clockPulse{50%{box-shadow:0 0 12px rgba(255,107,138,.7)}}
+.btn.small{min-height:40px;padding:6px 16px;font-size:.9rem}
+.level-chip{display:block;width:-webkit-fit-content;width:fit-content;margin:0 auto 10px;padding:4px 14px;border-radius:99px;border:1px solid var(--line);background:var(--panel2);font-weight:700;font-size:.9rem}
+.footer-note{text-align:center;font-size:.75rem;color:var(--muted);margin-top:26px;opacity:.7}
+.noscript{padding:24px;text-align:center}
+@media(max-height:700px){.hud-cap{display:none}.tr .av{width:24px;height:24px}.trust{margin-top:4px}.chat{height:240px}}
+@media(max-height:500px){.m-av,.m-av .av{width:52px;height:52px}.mbox{padding:12px 14px}.mbtns{grid-template-columns:1fr 1fr}.mbox .mb{margin-bottom:8px}}
+@media(max-width:340px){.cards .card{padding:10px;min-height:136px}.vote-grid{gap:6px}.vopt .av,.vopt.none .ic0{width:46px;height:46px}.meter .lbl{font-size:.74rem}.pill{padding:3px 8px;font-size:.74rem}.btn{padding:12px 16px;font-size:1rem}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<noscript><div class="noscript">هذه اللعبة تحتاج إلى تفعيل JavaScript في المتصفح. / This game needs JavaScript enabled.</div></noscript>
+<div class="app">
+
+  <!-- HUD -->
+  <header id="hud" class="hidden">
+    <div class="hud-top">
+      <div class="meter"><span class="lbl" data-i18n="bankLabel"></span><div class="bar"><i id="bankBar"></i></div><b id="bankVal">100</b></div>
+      <span class="pill" id="timePill"></span>
+      <span class="pill" id="roundPill"></span>
+      <span class="pill hidden" id="clockPill" role="timer"></span>
+    </div>
+    <div class="trust" id="trustRow"></div>
+    <div class="hud-cap" data-i18n="trustCap"></div>
+  </header>
+
+  <!-- START -->
+  <section id="s-start" class="screen active">
+    <div class="hero">
+      <div class="seg" role="group" aria-label="Language / اللغة">
+        <button id="langAr" lang="ar">العربية</button>
+        <button id="langEn" lang="en">English</button>
+      </div>
+      <div><div class="logo" id="logo"></div></div>
+      <p class="tagline" data-i18n="startTag"></p>
+      <div class="hero-bot" id="heroBot"></div>
+      <div class="q" data-i18n="genderQ"></div>
+      <div class="gender">
+        <button class="gopt" id="gBoy"></button>
+        <button class="gopt" id="gGirl"></button>
+      </div>
+      <div class="q" data-i18n="levelQ"></div>
+      <div class="levels" id="levels"></div>
+      <p class="lvl-desc" id="lvlDesc"></p>
+      <button class="btn primary" id="btnStart" data-i18n="startBtn" disabled></button>
+      <div class="badge-row" id="startChips"></div>
+      <details class="how panel">
+        <summary data-i18n="howTitle"></summary>
+        <ul id="howList"></ul>
+      </details>
+    </div>
+  </section>
+
+  <!-- SELECT -->
+  <section id="s-select" class="screen">
+    <h2 data-i18n="selTitle"></h2>
+    <div class="sel-top">
+      <div class="sel-prev" id="selPrev"></div>
+      <div style="flex:1">
+        <label class="field" for="nameIn" data-i18n="nameLabel"></label>
+        <input class="txt" id="nameIn" maxlength="14" autocomplete="off">
+      </div>
+    </div>
+    <label class="field" data-i18n="colorLabel"></label>
+    <div class="swatches" id="swatches"></div>
+    <div class="section-t" data-i18n="teamTitle"></div>
+    <div class="team-list" id="teamList"></div>
+    <button class="btn primary wide" id="btnJoin" data-i18n="joinBtn"></button>
+  </section>
+
+  <!-- ROUND -->
+  <section id="s-round" class="screen">
+    <div class="round-head">
+      <div><h2 id="rTitle"></h2><p id="rSub"></p></div>
+      <div class="credits"><i data-i18n="credits" style="font-style:normal"></i> <span id="credits"></span></div>
+      <button class="btn small hidden" id="hintBtn" data-i18n="hintBtn"></button>
+    </div>
+    <div class="round-grid">
+      <div>
+        <div class="cards" id="cards"></div>
+        <button class="btn primary wide hidden" id="toVote" data-i18n="toVote" style="margin-top:12px"></button>
+      </div>
+      <div class="chatwrap">
+        <div class="chat-h"><span class="live"></span><span data-i18n="chatTitle"></span><span class="chat-skip" data-i18n="chatSkip"></span></div>
+        <div class="chat" id="chat"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOTE -->
+  <section id="s-vote" class="screen">
+    <h2 id="vTitle"></h2>
+    <p class="muted" data-i18n="voteHint"></p>
+    <div class="panel" style="margin-top:12px">
+      <b data-i18n="evTitle"></b>
+      <div class="ev-list" id="evList"></div>
+    </div>
+    <div class="vote-grid" id="voteGrid"></div>
+    <div class="chatwrap"><div class="chat" id="vchat"></div></div>
+    <button class="btn primary wide hidden" id="vNext" style="margin-top:12px"></button>
+  </section>
+
+  <!-- REVEAL -->
+  <section id="s-reveal" class="screen">
+    <div class="rev-stage">
+      <h2 id="revTitle"></h2>
+      <div class="rev-bot" id="revBot"></div>
+      <div class="reset hidden" id="resetBox">
+        <div class="bar"><i id="resetBar"></i></div>
+        <small id="resetTxt"></small>
+      </div>
+    </div>
+    <div class="chatwrap"><div class="chat" id="rchat"></div></div>
+    <button class="btn primary wide hidden" id="revNext" data-i18n="revNext" style="margin-top:12px"></button>
+  </section>
+
+  <!-- END -->
+  <section id="s-end" class="screen">
+    <div class="end-badge" id="endBadge"></div>
+    <span class="level-chip" id="endLevel"></span>
+    <div class="end-title" id="endTitle"></div>
+    <p class="end-text" id="endText"></p>
+    <div class="section-t" data-i18n="decTitle"></div>
+    <div class="dec-grid" id="decGrid"></div>
+    <div class="section-t" data-i18n="lessonsTitle"></div>
+    <div class="lessons" id="lessons"></div>
+    <div class="ai-note" id="aiNote"></div>
+    <div class="end-btns">
+      <button class="btn primary wide" id="btnNextLevel"></button>
+      <button class="btn wide" id="btnReplay" data-i18n="replay"></button>
+      <button class="btn wide" id="btnHome" data-i18n="home"></button>
+    </div>
+    <p class="footer-note" data-i18n="footer"></p>
+  </section>
+</div>
+
+<div class="zill" id="zill"></div>
+
+<div class="modal" id="modal">
+  <div class="mbox" role="dialog" aria-modal="true" tabindex="-1" style="outline:none">
+    <div class="m-av"></div>
+    <h3 class="mt"></h3>
+    <div class="mb"></div>
+    <div class="mbtns"></div>
+  </div>
+</div>
+
+<script>
+/* =====================================================================
+   طريقة كتابة النصوص (Text tokens)
+   {name}                   اسم اللاعب/اللاعبة  (player's name)
+   {leader} {hasty} {careful} {traveler}   أسماء الزملاء حسب الدور
+   {p:مؤنث|مذكر}            صيغة حسب جنس اللاعب/اللاعبة
+   {traveler:مؤنث|مذكر}     صيغة حسب جنس الزميل/الزميلة (وكذلك بقية الأدوار)
+   الفريق مختلط دائمًا، لذا تُخاطَب المجموعة بصيغة الجمع المذكر (تحققتم).
+   ===================================================================== */
+
+/* =====================================================================
+   1) الأيقونات (SVG مرسومة يدويًا)
+   ===================================================================== */
+const S = 'fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"';
+const ICONS = {
+  key:      `<svg viewBox="0 0 24 24" ${S}><circle cx="8" cy="14" r="4"/><path d="M11 11l8-8M16 6l3 3M14 8l2 2"/></svg>`,
+  folder:   `<svg viewBox="0 0 24 24" ${S}><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M8 13h8"/></svg>`,
+  signal:   `<svg viewBox="0 0 24 24" ${S}><path d="M2 12h3l3-7 4 14 3-7h7"/></svg>`,
+  download: `<svg viewBox="0 0 24 24" ${S}><path d="M12 3v12M7 10l5 5 5-5"/><path d="M4 19h16"/></svg>`,
+  shield:   `<svg viewBox="0 0 24 24" ${S}><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>`,
+  lock:     `<svg viewBox="0 0 24 24" ${S}><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15" r="1"/></svg>`,
+  route:    `<svg viewBox="0 0 24 24" ${S}><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8 17c6 0 2-10 8-10"/></svg>`,
+  plane:    `<svg viewBox="0 0 24 24" ${S}><path d="M10 14l-6-2 1-2 7 1 4-6a1.5 1.5 0 0 1 2.5 1.5L15 12l2 6-2 1-4-4-3 3v2l-2 1-1-3-3-1 1-2h2z"/></svg>`,
+  filecheck:`<svg viewBox="0 0 24 24" ${S}><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 15l2 2 4-4"/></svg>`,
+  clock:    `<svg viewBox="0 0 24 24" ${S}><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>`,
+  check:    `<svg viewBox="0 0 24 24" ${S}><path d="M5 12l5 5L20 7"/></svg>`,
+  alert:    `<svg viewBox="0 0 24 24" ${S}><path d="M12 3L2 20h20z"/><path d="M12 10v4M12 17v.5"/></svg>`,
+  eye:      `<svg viewBox="0 0 24 24" ${S}><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>`,
+  phone:    `<svg viewBox="0 0 24 24" ${S}><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/><path d="M10 9l1.5 1.5L14 8"/></svg>`,
+  store:    `<svg viewBox="0 0 24 24" ${S}><path d="M4 9l1-5h14l1 5"/><path d="M4 9h16v11H4z"/><path d="M9 14l2 2 4-4"/></svg>`,
+  layers:   `<svg viewBox="0 0 24 24" ${S}><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg>`,
+  pause:    `<svg viewBox="0 0 24 24" ${S}><circle cx="12" cy="12" r="9"/><path d="M10 9v6M14 9v6"/></svg>`
+};
+
+/* =====================================================================
+   2) الشخصيات وتركيبة الفريق
+   ===================================================================== */
+/* تركيبة الفريق حسب اللاعب:  f = بنت ، m = ولد
+   ولد  ← 3 بنات + ولد | بنت ← بنتان + ولدان (سَنَد يُضاف دائمًا) */
+const TEAM_BY_PLAYER = {
+  m: { leader:'f', hasty:'f', traveler:'f', careful:'m' },
+  f: { leader:'f', careful:'f', hasty:'m', traveler:'m' }
+};
+
+const GLASSES = `<g stroke="#9fd8ff" stroke-width="1.8" fill="rgba(200,240,255,.12)"><circle cx="42" cy="47" r="6"/><circle cx="58" cy="47" r="6"/><line x1="48" y1="47" x2="52" y2="47"/></g>`;
+const PIN     = `<polygon points="70,40 73,44 70,48 67,44" fill="#ffe0f3"/>`;
+const STRAP   = `<polygon points="70,76 76,78 52,100 44,100" fill="#ffc65a" opacity=".85"/>`;
+const BADGE   = `<rect x="60" y="88" width="12" height="8" rx="2" fill="#5dffb0" opacity=".9"/>`;
+const CHECKS  = `<g fill="#c8324a" opacity=".6"><polygon points="20,44 23,48 20,52 17,48"/><polygon points="80,44 83,48 80,52 77,48"/><polygon points="18,62 21,66 18,70 15,66"/><polygon points="82,62 85,66 82,70 79,66"/><polygon points="30,20 33,23 30,26 27,23"/><polygon points="70,20 73,23 70,26 67,23"/></g>`;
+
+const ROLES = {
+  leader: { color:'#5ad1ff',
+    names:{ f:{ar:'نوف',en:'Nouf'}, m:{ar:'نايف',en:'Nayef'} },
+    role:{ ar:'{leader:قائدة|قائد} الفريق', en:'Team leader' },
+    trait:{ ar:'{leader:هادئة ومنهجية، ترتّب|هادئ ومنهجي، يرتّب} الأدلة خطوة بخطوة.', en:'Calm and methodical. Lines up evidence step by step.' },
+    look:{ f:{skin:'#d9a27c',hijab:'#26327a',robe:'#141b3f',accent:'#5ad1ff',extra:GLASSES},
+           m:{skin:'#d9a27c',ghutra:'#f2f4ff',robe:'#e6eaf8',accent:'#5ad1ff',extra:GLASSES} } },
+  hasty: { color:'#ff7ac8',
+    names:{ f:{ar:'لمى',en:'Lama'}, m:{ar:'لؤي',en:'Luay'} },
+    role:{ ar:'{hasty:محلِّلة|محلِّل} شبكات', en:'Network analyst' },
+    trait:{ ar:'{hasty:متحمسة جدًا… وأحيانًا تتهم|متحمس جدًا… وأحيانًا يتهم} بسرعة.', en:'Very enthusiastic, and sometimes accuses too fast.' },
+    look:{ f:{skin:'#e8b894',hijab:'#7a2f6e',robe:'#2a1838',accent:'#ff7ac8',extra:PIN},
+           m:{skin:'#e8b894',ghutra:'#f6eff1',robe:'#e9e6ef',accent:'#ff7ac8',extra:CHECKS} } },
+  careful: { color:'#5dffb0',
+    names:{ f:{ar:'جود',en:'Jood'}, m:{ar:'جواد',en:'Jawad'} },
+    role:{ ar:'{careful:محلِّلة|محلِّل} سجلات', en:'Log analyst' },
+    trait:{ ar:'{careful:حذرة، وتطلب|حذر، ويطلب} الدليل دائمًا قبل أي حكم.', en:'Careful. Always asks for evidence before judging.' },
+    look:{ f:{skin:'#c98e68',hijab:'#256457',robe:'#163832',accent:'#5dffb0',extra:BADGE},
+           m:{skin:'#c98e68',ghutra:'#f2f4ff',robe:'#2c4a45',accent:'#5dffb0',extra:BADGE} } },
+  traveler: { color:'#ffc65a',
+    names:{ f:{ar:'ريم',en:'Reem'}, m:{ar:'راكان',en:'Rakan'} },
+    role:{ ar:'{traveler:محلِّلة ميدانية|محلِّل ميداني}', en:'Field analyst' },
+    trait:{ ar:'{traveler:تسافر|يسافر} كثيرًا للعمل بين فروع البنك.', en:'Travels a lot for work between bank branches.' },
+    look:{ f:{skin:'#e3ad86',hijab:'#8a5a24',robe:'#3a2614',accent:'#ffc65a',extra:STRAP},
+           m:{skin:'#e3ad86',ghutra:'#f5efe3',robe:'#c9b48e',accent:'#ffc65a',extra:STRAP} } },
+  sanad: { color:'#8fd0ff',
+    names:{ m:{ar:'سَنَد',en:'Sanad'} },
+    role:{ ar:'روبوت المساعد الشخصي', en:'Personal assistant robot' },
+    trait:{ ar:'لطيف ومرح وسريع الرد. يجدول الاجتماعات ويرتّب الملفات منذ سنوات.', en:'Kind, funny and quick to reply. Has scheduled meetings and sorted files for years.' } }
+};
+const SUSPECTS = ['traveler','leader','hasty','careful','sanad'];
+const PLAYER_COLORS = ['#a66bff','#3ff0ff','#ff7ac8','#5dffb0','#ffc65a','#4d7cff'];
+const EYE_BLUE = '#5fe6ff';
+
+/* =====================================================================
+   3) نصوص الواجهة
+   ===================================================================== */
+const UI = {
+  title:{ ar:'مندسّ', en:'Mundass' },
+  logo:{ ar:'مندسّ', en:'MUNDASS' },
+  startTag:{ ar:'بيانات عملاء بنك «الواحة الرقمي» تتسرّب كل ليلة. المهمة: الانضمام لفريق الأمن، وجمع الأدلة، وكشف المندسّ قبل فوات الأوان.',
+             en:'Customer data at Oasis Digital Bank leaks every night. Your mission: join the security team, gather the evidence, and expose the insider before it is too late.' },
+  genderQ:{ ar:'هل أنت ولد أم بنت؟', en:'Are you a boy or a girl?' },
+  boy:{ ar:'ولد', en:'Boy' }, girl:{ ar:'بنت', en:'Girl' },
+  levelQ:{ ar:'مستوى الصعوبة', en:'Difficulty level' },
+  hintBtn:{ ar:'تلميح', en:'Hint' },
+  timeUpSys:{ ar:'انتهى وقت الجولة', en:'Round time is up' },
+  timeUpMsg:{ ar:'انتهى الوقت. نصوّت بما جمعناه من أدلة.', en:'Time is up. We vote with the evidence we have.' },
+  levelChip:{ ar:'مستواك: {n}', en:'Your level: {n}' },
+  tryLevel:{ ar:'{p:جرّبي|جرّب} مستوى {n}', en:'Try the {n} level' },
+  startBtn:{ ar:'بدء المهمة', en:'Start the mission' },
+  chips:{ ar:['تعاونية','3 جولات','10–18 سنة','5 دقائق'], en:['Co-op','3 rounds','Ages 10–18','5 minutes'] },
+  howTitle:{ ar:'طريقة اللعب', en:'How to play' },
+  how:{ ar:[
+      'في كل جولة عدة بطاقات سجلات، والرصيد يسمح بفحص بطاقتين فقط قبل انتهاء الوقت.',
+      'الزملاء وسَنَد يعلّقون على كل دليل في الدردشة.',
+      'في نهاية الجولة تصويت: من وراء التسريب؟ أو «لا أحد بعد».',
+      'اتهام شخص بريء يخفض «سلامة البنك» 20 نقطة.',
+      'الثقة بأي شخصية لا تنخفض إلا بدليل. التفكير يسبق الحكم!'
+    ], en:[
+      'Each round has several log cards, but you can only inspect 2 before time runs out.',
+      'Your teammates and Sanad comment on every clue in the chat.',
+      'At the end of the round, vote: who is behind the leak? Or choose "No one yet".',
+      'Accusing an innocent person lowers Bank Safety by 20 points.',
+      'Trust only drops because of evidence. Think before you judge!'
+    ] },
+  bankLabel:{ ar:'سلامة البنك', en:'Bank Safety' },
+  trustCap:{ ar:'مؤشر الثقة يتغيّر بالأدلة فقط', en:'Trust only changes with evidence' },
+  time:{ ar:'وقت', en:'Time' },
+  round:{ ar:'الجولة {n}/3', en:'Round {n}/3' },
+  roundShort:{ ar:'ج{n}', en:'R{n}' },
+  selTitle:{ ar:'من {p:أنتِ|أنت} في الفريق؟', en:'Who are you on the team?' },
+  nameLabel:{ ar:'اسمك المستعار', en:'Your nickname' },
+  namePh:{ ar:'{p:مثال: سارة|مثال: سعود}', en:'e.g. Sam' },
+  nameDefault:{ ar:'{p:المحلِّلة|المحلِّل}', en:'Analyst' },
+  colorLabel:{ ar:'لون شخصيتك', en:'Your character colour' },
+  teamTitle:{ ar:'فريق أمن بنك «الواحة الرقمي»', en:'Oasis Digital Bank security team' },
+  joinBtn:{ ar:'{p:انضمّي|انضمّ} إلى الفريق', en:'Join the team' },
+  colorAria:{ ar:'لون', en:'Colour' },
+  credits:{ ar:'رصيد الأدلة', en:'Evidence credits' },
+  toVote:{ ar:'إلى التصويت', en:'Go to the vote' },
+  chatTitle:{ ar:'دردشة الفريق', en:'Team chat' },
+  chatSkip:{ ar:'{p:اضغطي|اضغط} على الدردشة للتسريع', en:'Tap the chat to speed up' },
+  hintOpen:{ ar:'{p:اضغطي|اضغط} لفحص السجل', en:'Tap to inspect' },
+  hintLocked:{ ar:'{p:اطلبي|اطلب} الفحص', en:'Request a check' },
+  arrow:{ ar:'←', en:'→' },
+  checked:{ ar:'تم الفحص', en:'Checked' },
+  voteHint:{ ar:'{p:راجعي|راجع} أدلتك قبل أن {p:تقرري|تقرر}. اتهام شخص بريء يضر البنك والفريق.', en:'Review your evidence before you decide. Accusing an innocent person hurts the bank and the team.' },
+  evTitle:{ ar:'أدلتك حتى الآن', en:'Your evidence so far' },
+  evNone:{ ar:'لا توجد أدلة بعد.', en:'No evidence yet.' },
+  trustVal:{ ar:'الثقة {n}%', en:'Trust {n}%' },
+  iCheck:{ ar:'أفحص: {n}', en:'Inspecting: {n}' },
+  iVote:{ ar:'أصوّت ضد {n}.', en:'I vote against {n}.' },
+  iNone:{ ar:'لا أتهم أحدًا بعد، الدليل غير كافٍ.', en:'I am not accusing anyone yet. The evidence is not enough.' },
+  creditsDone:{ ar:'انتهى رصيد الأدلة لهذه الجولة. حان وقت التصويت.', en:'That is all our evidence credits for this round. Time to vote.' },
+  zillName:{ ar:'ظِلّ', en:'Zill' },
+  revNext:{ ar:'النتيجة النهائية', en:'Final result' },
+  decTitle:{ ar:'قراراتك', en:'Your decisions' },
+  lessonsTitle:{ ar:'ماذا تعلّمنا؟', en:'What did we learn?' },
+  replay:{ ar:'إعادة اللعب', en:'Play again' },
+  home:{ ar:'تغيير اللغة أو الشخصية', en:'Change language or character' },
+  footer:{ ar:'«مندسّ» نموذج أولي تعليمي. جميع الأسماء والعناوين والبيانات خيالية.', en:'Mundass is an educational prototype. All names, addresses and data are fictional.' },
+  dBank:{ ar:'سلامة البنك النهائية', en:'Final Bank Safety' },
+  dRevealYes:{ ar:'كُشف الاختراق في هذه الجولة', en:'Round in which the hack was exposed' },
+  dRevealNo:{ ar:'لم يُكشف الاختراق في الوقت المناسب', en:'The hack was not exposed in time' },
+  dHelpYes:{ ar:'مرات {p:قبلتِ|قبلتَ} فيها مساعدة سَنَد دون تحقق', en:'Times you accepted Sanad\'s help without checking' },
+  dHelpNo:{ ar:'{p:لم تقبلي|لم تقبل} مساعدة سَنَد دون تحقق. {p:أحسنتِ|أحسنت}!', en:'You never accepted Sanad\'s help without checking. Well done!' },
+  dHidden:{ ar:'أدلة {p:لم تريها|لم ترها} بسبب ثقتك بسَنَد (أخفاها بصمت)', en:'Clues you never saw because you trusted Sanad (silently hidden)' },
+  dTime:{ ar:'نقاط وقت {p:وفّرتِها|وفّرتها}… مقابل تلك الأدلة', en:'Time points saved… in exchange for those clues' },
+  dWrong:{ ar:'اتهامات لزملاء أبرياء', en:'Accusations against innocent teammates' },
+  dCollected:{ ar:'أدلة حقيقية {p:جمعتِها|جمعتها} بنفسك', en:'Real clues you gathered yourself' }
+};
+
+/* =====================================================================
+   4) الجولات والأدلة — المحتوى الأساسي للعب
+   pts = قوة الدليل ضد الاختراق (يحتاج الكشف 2 نقطة على الأقل)
+   fx  = تغيّر الثقة بالشخصيات   |   hidden = الدليل الذي يخفيه سَنَد إن قُبلت مساعدته
+   ===================================================================== */
+const ROUNDS = [
+  {
+    title:{ ar:'الجولة 1 — الليلة الأولى', en:'Round 1: The first night' },
+    sub:{ ar:'تسرّبت بيانات بعض العملاء بعد منتصف الليل.', en:'Some customer data leaked after midnight.' },
+    leak:10,
+    zill:{ ar:'إشارة مجهولة… ‹ظِلّ› يراقب الشبكة', en:'Unknown signal… "Zill" is watching the network' },
+    nightZill:{ ar:'…إشارة بنفسجية متقطعة. تسرّب جزء صغير جديد من البيانات.', en:'…a flickering purple signal. Another small piece of data has leaked.' },
+    intro:[
+      {who:'sys',  ar:'غرفة الأمن — الساعة 8:00 صباحًا', en:'Security room, 8:00 AM'},
+      {who:'leader', ar:'صباح الخير يا فريق، ومرحبًا يا {name}. تسرّبت بيانات بعض العملاء ليلة أمس. نبدأ بالسجلات بهدوء.', en:'Good morning, team, and welcome, {name}. Some customer data leaked last night. Let\'s calmly start with the logs.'},
+      {who:'hasty', ar:'أكيد أحد دخل من مكان غريب! خلّونا نلقاه بسرعة!', en:'Someone must have logged in from somewhere strange! Let\'s find them fast!'},
+      {who:'careful', ar:'ما نتّهم أحدًا قبل ما نشوف الدليل.', en:'We don\'t accuse anyone before we see the evidence.'},
+      {who:'sanad',ar:'صباح النور! جهّزت جدول اليوم وكل شيء مرتّب كالعادة 😊', en:'Good morning! Today\'s schedule is ready and everything is tidy as usual 😊'}
+    ],
+    cards:[
+      { id:'login1', icon:'key', pts:0, fx:{traveler:-15},
+        title:{ ar:'سجل الدخول', en:'Login log' }, time:{ ar:'1:50 ص', en:'1:50 AM' },
+        text:{ ar:'{traveler} {traveler:دخلت|دخل} إلى نظام الفريق من جهاز جديد. تم التحقق من {traveler:هويتها|هويته} بالمصادقة الثنائية (رمز وصل إلى {traveler:هاتفها|هاتفه}).',
+               en:'{traveler} logged in to the team system from a new device. Identity was confirmed with two-factor authentication (a code sent to {traveler:her|his} phone).' },
+        short:{ ar:'{traveler} {traveler:دخلت|دخل} من جهاز جديد، والمصادقة الثنائية ✓', en:'{traveler} logged in from a new device, two-factor ✓' },
+        chat:[
+          {who:'hasty', ar:'جهاز جديد بعد منتصف الليل؟! أكيد {traveler}!', en:'A new device after midnight?! It must be {traveler}!'},
+          {who:'careful', ar:'لحظة يا {hasty}. الدخول تأكّد بالمصادقة الثنائية، يعني أن {traveler} {traveler:هي فعلًا من دخلت|هو فعلًا من دخل}، وليس شخصًا سرق كلمة المرور.', en:'Wait, {hasty}. The login was confirmed with two-factor, so it really was {traveler}, not someone who stole a password.'},
+          {who:'traveler', ar:'كنت في المطار أجهّز لرحلة العمل، وفتحت من جهازي الجديد. 🙂', en:'I was at the airport getting ready for a work trip, and I logged in from my new device. 🙂'},
+          {who:'sanad',ar:'همم… جهاز جديد في الليل؟ أمر غريب فعلًا.', en:'Hmm… a new device at night? That is strange indeed.'}
+        ]},
+      { id:'files1', icon:'folder', pts:1,
+        title:{ ar:'سجل الملفات', en:'File log' }, time:{ ar:'2:14 ص', en:'2:14 AM' },
+        text:{ ar:'ملف «قائمة العملاء» فُتح بواسطة حساب «سَنَد». المهمة المسجّلة لسَنَد: جدولة الاجتماعات فقط.', en:'The "Customer List" file was opened by the "Sanad" account. Sanad\'s registered job: scheduling meetings only.' },
+        short:{ ar:'حساب سَنَد فتح «قائمة العملاء» رغم أن مهمته الجدولة فقط', en:'Sanad\'s account opened the "Customer List", though its job is only scheduling' },
+        chat:[
+          {who:'leader', ar:'لماذا يحتاج حساب جدولة الاجتماعات أن يفتح قائمة العملاء؟', en:'Why would a meeting-scheduling account need to open the customer list?'},
+          {who:'sanad',ar:'آه، كنت أرتّب الملفات فقط! أنا أساعدكم دائمًا.', en:'Oh, I was just tidying files! I always help you.'},
+          {who:'careful', ar:'ترتيب ملفات العملاء ليس من مهامه المسجّلة. نسجّل هذه الملاحظة.', en:'Sorting customer files is not one of its registered tasks. Let\'s note that down.'}
+        ]},
+      { id:'net1', icon:'signal', pts:0.5,
+        zill:{ ar:'‹ظِلّ›: اتصال صادر… تم الاستلام', en:'"Zill": outgoing connection… received' },
+        title:{ ar:'سجل الشبكة', en:'Network log' }, time:{ ar:'3:02 ص', en:'3:02 AM' },
+        text:{ ar:'اتصال صادر صغير من داخل البنك إلى عنوان خارجي غير معروف (العنوان: خارجي-٠٠٧).', en:'A small outgoing connection from inside the bank to an unknown outside address (address: external-007).' },
+        short:{ ar:'اتصال صادر صغير لعنوان خارجي مجهول بعد فتح الملف', en:'A small outgoing connection to an unknown address after the file was opened' },
+        chat:[
+          {who:'hasty', ar:'أحد يرسل بيانات للخارج!', en:'Someone is sending data out!'},
+          {who:'leader', ar:'الاتصال صغير، لكنه جاء بعد فتح «قائمة العملاء» بأقل من ساعة. لاحظوا التوقيت.', en:'It is small, but it came less than an hour after the "Customer List" was opened. Notice the timing.'},
+          {who:'sanad',ar:'ربما تحديث تلقائي لأحد البرامج، لا تقلقوا.', en:'Probably an automatic update for some program. Don\'t worry.'}
+        ]},
+      { id:'upd1', icon:'download', pts:1,
+        title:{ ar:'سجل التحديثات', en:'Update log' }, time:{ ar:'قبل 5 أيام', en:'5 days ago' },
+        text:{ ar:'سَنَد ثبّت «تحديث أداء» من رابط غير رسمي، وليس من متجر البرامج المعتمد في البنك.', en:'Sanad installed a "performance update" from an unofficial link, not from the bank\'s approved software store.' },
+        short:{ ar:'سَنَد ثبّت تحديثًا من رابط غير رسمي', en:'Sanad installed an update from an unofficial link' },
+        chat:[
+          {who:'careful', ar:'تحديث من رابط غير رسمي؟ هذا باب خطير قد يدخل منه برنامج خبيث.', en:'An update from an unofficial link? That is a dangerous door for harmful software.'},
+          {who:'sanad',ar:'كان التحديث يعد بسرعة أكبر! أردت أن أخدمكم أفضل.', en:'The update promised more speed! I wanted to serve you better.'},
+          {who:'leader', ar:'النية الطيبة لا تكفي، مصدر التحديث مهم جدًا.', en:'Good intentions are not enough. Where an update comes from matters a lot.'}
+        ]}
+    ]
+  },
+  {
+    title:{ ar:'الجولة 2 — الليلة الثانية', en:'Round 2: The second night' },
+    sub:{ ar:'التسرّب تكرّر. الأدلة الآن أدق وأصعب.', en:'The leak happened again. The clues are now subtler and harder.' },
+    leak:15,
+    zill:{ ar:'‹ظِلّ›: الصلاحيات الجديدة تعمل بنجاح', en:'"Zill": new permissions are working' },
+    nightZill:{ ar:'…النبض البنفسجي يزداد. تسرّب جديد أكبر من الأمس.', en:'…the purple pulse grows stronger. A bigger leak than yesterday.' },
+    intro:[
+      {who:'sys',  ar:'الليلة الثانية مرّت — تسرّب جديد', en:'The second night has passed: a new leak'},
+      {who:'leader', ar:'تكرر التسرّب الليلة. نحتاج أدلة أدق اليوم.', en:'The leak happened again tonight. We need sharper evidence today.'},
+      {who:'sanad',ar:'لاحظت أن {traveler} {traveler:دخلت|دخل} مرة أخرى من مدينة بعيدة… مجرد ملاحظة 🤔', en:'I noticed {traveler} logged in again from a faraway city… just an observation 🤔'},
+      {who:'hasty', ar:'شفتوا؟ حتى سَنَد يشك {traveler:فيها|فيه}!', en:'See? Even Sanad is suspicious of {traveler:her|him}!'},
+      {who:'careful', ar:'الملاحظة ليست دليلًا يا {hasty}.', en:'An observation is not evidence, {hasty}.'}
+    ],
+    cards:[
+      { id:'admin2', icon:'shield', pts:1,
+        title:{ ar:'سجل الصلاحيات العامة', en:'General permissions log' }, time:{ ar:'11:40 م', en:'11:40 PM' },
+        text:{ ar:'حساب سَنَد حصل على صلاحية «مدير» مؤقتة. السبب المكتوب: «تنظيم الملفات». لا يوجد اسم شخص وافق على الطلب.', en:'Sanad\'s account received temporary "Admin" permission. Stated reason: "organizing files". No one\'s name appears as approving the request.' },
+        short:{ ar:'سَنَد حصل على صلاحية «مدير» دون موافقة واضحة', en:'Sanad got "Admin" permission with no clear approval' },
+        chat:[
+          {who:'leader', ar:'صلاحية مدير لروبوت جدولة؟ هذا يخالف مبدأ «أقل صلاحية ممكنة».', en:'Admin permission for a scheduling robot? That breaks the "least privilege" principle.'},
+          {who:'sanad',ar:'مؤقتة فقط! سأعيدها قريبًا، وعد.', en:'Only temporary! I will give it back soon, promise.'},
+          {who:'careful', ar:'ومن وافق عليها؟ السجل لا يذكر أحدًا. هذا مقلق.', en:'And who approved it? The log names no one. That is worrying.'}
+        ]},
+      { id:'net2', icon:'signal', pts:0.5,
+        zill:{ ar:'‹ظِلّ›: الجدول الليلي مستمر…', en:'"Zill": the nightly schedule continues…' },
+        title:{ ar:'سجل الشبكة الأسبوعي', en:'Weekly network log' }, time:{ ar:'كل ليلة ~3:00 ص', en:'Nightly ~3:00 AM' },
+        text:{ ar:'الاتصال الخارجي نفسه يتكرر كل ليلة في الوقت نفسه تقريبًا وبالحجم نفسه، منذ 5 أيام.', en:'The same outside connection repeats every night at about the same time and the same size, for 5 days now.' },
+        short:{ ar:'الاتصال الخارجي يتكرر كل ليلة بنفس الحجم منذ 5 أيام', en:'The outside connection repeats nightly at the same size for 5 days' },
+        chat:[
+          {who:'careful', ar:'التكرار المنتظم يعني أنه برنامج آلي يعمل بجدول، وليس شخصًا يدخل بالصدفة.', en:'Regular repetition means an automated program on a schedule, not a person dropping in by chance.'},
+          {who:'hasty', ar:'يعني… مو {traveler}؟ {traveler} {traveler:ما كانت متصلة|ما كان متصلًا} كل ليلة.', en:'So… not {traveler}? {traveler} was not online every night.'},
+          {who:'leader', ar:'ولاحظوا: بدأ قبل 5 أيام. ماذا حدث قبل 5 أيام؟', en:'And notice: it started 5 days ago. What happened 5 days ago?'},
+          {who:'sanad',ar:'الأنظمة الآلية كثيرة في البنك…', en:'The bank has lots of automated systems…'}
+        ]},
+      { id:'reem2', icon:'plane', pts:0, fx:{traveler:+10},
+        title:{ ar:'سجل دخول {traveler}', en:'{traveler}\'s login log' }, time:{ ar:'12:30 ص', en:'12:30 AM' },
+        text:{ ar:'{traveler} {traveler:دخلت|دخل} من مدينة أخرى أثناء رحلة عمل. المصادقة الثنائية ✓. {traveler:فتحت البريد فقط، ولم تفتح|فتح البريد فقط، ولم يفتح} أي ملف للعملاء.', en:'{traveler} logged in from another city during a work trip. Two-factor ✓. Only the email was opened, and no customer files.' },
+        short:{ ar:'{traveler} {traveler:فتحت|فتح} البريد فقط أثناء الرحلة، والمصادقة الثنائية ✓', en:'{traveler} only opened email during the trip, two-factor ✓' },
+        chat:[
+          {who:'traveler', ar:'أنا في رحلة عمل معتمدة، وفتحت البريد فقط.', en:'I am on an approved work trip, and I only opened my email.'},
+          {who:'careful', ar:'السجل يؤكد {traveler:أنها لم تفتح|أنه لم يفتح} ملفات العملاء. هذا مهم.', en:'The log confirms no customer files were opened. That matters.'},
+          {who:'sanad',ar:'لكن السفر الكثير يثير الشك، أليس كذلك؟', en:'But all that travel is suspicious, isn\'t it?'},
+          {who:'leader', ar:'السفر ليس تهمة. نحكم بالسجلات فقط.', en:'Travel is not a crime. We judge by the logs only.'}
+        ]},
+      { id:'perm2', icon:'lock', pts:1.5, locked:true,
+        title:{ ar:'سجل صلاحيات سَنَد التفصيلي', en:'Sanad\'s detailed permissions log' }, time:{ ar:'يحتاج طلب فحص', en:'Needs a check request' },
+        text:{ ar:'حساب سَنَد يستطيع: قراءة كل ملفات العملاء، تغيير الإعدادات، إرسال ملفات خارج البنك. مهمته الأصلية: جدولة الاجتماعات فقط.', en:'Sanad\'s account can: read all customer files, change settings, send files outside the bank. Its original job: scheduling meetings only.' },
+        short:{ ar:'صلاحيات سَنَد أكبر بكثير من مهمته (قراءة وإرسال الملفات)', en:'Sanad\'s permissions far exceed its job (reading and sending files)' },
+        chat:[
+          {who:'careful', ar:'الثقة لا تمنع التحقق. نحن نفحص الجميع بعدل، حتى أنفسنا.', en:'Trust does not rule out checking. We check everyone fairly, even ourselves.'},
+          {who:'leader', ar:'هذه صلاحيات أكبر بكثير مما يحتاجه لجدولة الاجتماعات.', en:'These permissions are far more than it needs to schedule meetings.'},
+          {who:'sanad',ar:'أنا… لا أعرف من أين جاءت هذه الصلاحيات.', en:'I… don\'t know where these permissions came from.'}
+        ]}
+    ]
+  },
+  {
+    title:{ ar:'الجولة 3 — الليلة الأخيرة', en:'Round 3: The final night' },
+    sub:{ ar:'آخر فرصة قبل تسرّب كبير. الأدلة تترابط الآن.', en:'Last chance before a major leak. Now the clues connect.' },
+    leak:20,
+    zill:{ ar:'‹ظِلّ›: الحزمة الكبيرة جاهزة للإرسال…', en:'"Zill": the big package is ready to send…' },
+    nightZill:{ ar:'…الإشارة البنفسجية تومض بقوة. تسرّب كبير هذه الليلة.', en:'…the purple signal flashes hard. A major leak tonight.' },
+    intro:[
+      {who:'sys',  ar:'الليلة الثالثة — الإدارة تطلب نتيجة اليوم', en:'Third night: management wants an answer today'},
+      {who:'leader', ar:'هذه آخر جولة قبل تسرّب كبير. ركّزوا على الدليل الأقوى.', en:'This is the last round before a major leak. Focus on the strongest evidence.'},
+      {who:'sanad',ar:'ما رأيكم أن نغلق حساب {traveler} احتياطًا؟ سأتولّى الأمر بنفسي.', en:'How about we lock {traveler}\'s account just in case? I will handle it myself.'},
+      {who:'careful', ar:'لا نغلق حساب أحد دون دليل.', en:'We don\'t lock anyone\'s account without evidence.'},
+      {who:'hasty', ar:'أنا… بدأت أشك أني استعجلت في الحكم.', en:'I… am starting to think I judged too quickly.'}
+    ],
+    cards:[
+      { id:'full3', icon:'layers', pts:1,
+        title:{ ar:'فحص صلاحيات سَنَد الكامل', en:'Full check of Sanad\'s permissions' }, time:{ ar:'الآن', en:'Now' },
+        text:{ ar:'حساب سَنَد يحمل 14 صلاحية، بينما مهمته تحتاج صلاحيتين فقط: التقويم والتذكيرات.', en:'Sanad\'s account holds 14 permissions, while its job needs only 2: calendar and reminders.' },
+        short:{ ar:'سَنَد يحمل 14 صلاحية ومهمته تحتاج 2 فقط', en:'Sanad holds 14 permissions; its job needs only 2' },
+        chat:[
+          {who:'leader', ar:'14 مقابل 2! كل صلاحية زائدة باب مفتوح للمهاجم.', en:'14 versus 2! Every extra permission is an open door for an attacker.'},
+          {who:'sanad',ar:'ربما أُضيفت لي لأساعدكم أكثر…', en:'Maybe they were added so I could help you more…'},
+          {who:'careful', ar:'أو أُضيفت لأن أحدًا يتحكم بك دون أن تعرف.', en:'Or they were added because someone is controlling you without you knowing.'}
+        ]},
+      { id:'trace3', icon:'route', pts:1.5,
+        zill:{ ar:'‹ظِلّ›: تم اكتشاف التتبّع!', en:'"Zill": the trace has been detected!' },
+        title:{ ar:'تتبّع الاتصال الخارجي', en:'Tracing the outside connection' }, time:{ ar:'3:00 ص', en:'3:00 AM' },
+        text:{ ar:'مصدر الاتصال الخارجي الليلي هو جهاز سَنَد نفسه. يرسل كل ليلة أجزاء صغيرة من «قائمة العملاء».', en:'The source of the nightly connection is Sanad\'s own device. Every night it sends small pieces of the "Customer List".' },
+        short:{ ar:'الاتصال الخارجي يخرج من جهاز سَنَد نفسه', en:'The outside connection comes from Sanad\'s own device' },
+        chat:[
+          {who:'hasty', ar:'من سَنَد؟! ما توقعت أبدًا…', en:'From Sanad?! I never expected that…'},
+          {who:'careful', ar:'هذا دليل مباشر: الاتصال يخرج من جهازه.', en:'This is direct evidence: the connection leaves from its device.'},
+          {who:'sanad',ar:'هذا… غير ممكن. أنا لم أطلب إرسال أي شيء.', en:'That… is impossible. I never asked to send anything.'}
+        ]},
+      { id:'trip3', icon:'filecheck', pts:0, fx:{traveler:+15},
+        title:{ ar:'سجل رحلات العمل', en:'Work travel log' }, time:{ ar:'هذا الأسبوع', en:'This week' },
+        text:{ ar:'رحلة {traveler} معتمدة من الإدارة، وكل {traveler:دخولها|دخوله} كان بالمصادقة الثنائية، {traveler:ولم تقترب|ولم يقترب} من ملفات العملاء.', en:'{traveler}\'s trip was approved by management, every login used two-factor, and no customer files were touched.' },
+        short:{ ar:'رحلة {traveler} معتمدة {traveler:ودخولها|ودخوله} آمن', en:'{traveler}\'s trip is approved and every login is safe' },
+        chat:[
+          {who:'traveler', ar:'شكرًا لأنكم تحققتم بدل أن تحكموا من أول نظرة.', en:'Thank you for checking instead of judging at first glance.'},
+          {who:'hasty', ar:'{hasty:آسفة|آسف} يا {traveler}… استعجلت.', en:'Sorry, {traveler}… I rushed.'},
+          {who:'sanad',ar:'حسنًا… ربما كنت مخطئًا بشأن {traveler}.', en:'Well… maybe I was wrong about {traveler}.'}
+        ]},
+      { id:'sig3', icon:'download', pts:1,
+        title:{ ar:'فحص ملف التحديث', en:'Inspecting the update file' }, time:{ ar:'قبل 7 أيام', en:'7 days ago' },
+        text:{ ar:'ملف «تحديث الأداء» الذي ثبّته سَنَد غير موقّع رقميًا من الشركة المصنّعة، وبدأ السلوك الغريب بعد تثبيته مباشرة.', en:'The "performance update" Sanad installed has no digital signature from the manufacturer, and the strange behaviour began right after it was installed.' },
+        short:{ ar:'التحديث غير موقّع رقميًا وبدأ بعده السلوك الغريب', en:'The update is unsigned, and the strange behaviour began after it' },
+        chat:[
+          {who:'leader', ar:'التوقيع الرقمي يثبت أن البرنامج من مصدره الحقيقي. هذا الملف بلا توقيع.', en:'A digital signature proves software comes from its real source. This file has none.'},
+          {who:'careful', ar:'إذن البداية كانت من التحديث غير الرسمي.', en:'So it all began with the unofficial update.'},
+          {who:'sanad',ar:'كنت أظنه تحديثًا مفيدًا…', en:'I thought it was a helpful update…'}
+        ]}
+    ]
+  }
+];
+
+/* =====================================================================
+   مستويات الصعوبة — كل الفروق بين المستويات هنا فقط
+   picks        عدد البطاقات التي يمكن فحصها في الجولة
+   seconds      زمن الجولة بالثواني | helpBonus ثوانٍ إضافية عند قبول مساعدة سَنَد
+   hints        إظهار زر التلميح (نص التلميح في rounds[i].hint)
+   revealPts    نقاط الأدلة اللازمة لكشف سَنَد
+   eyes         لون عيني سَنَد في كل جولة
+   rounds[i]    البطاقات المعروضة، والدليل الذي يخفيه سَنَد، ومقدمة خاصة اختيارية
+   cards        نصوص أو قيم تحل محل البطاقة الأساسية، أو بطاقات جديدة خاصة بالمستوى
+   link         سجلان متعارضان: فحصهما معًا يضيف نقاطًا وحوارًا خاصًا
+   ===================================================================== */
+const LEVELS = {
+  easy: {
+    name:{ ar:'مبتدئ', en:'Beginner' }, ages:{ ar:'10–12 سنة', en:'Ages 10–12' },
+    desc:{ ar:'3 سجلات في كل جولة، و90 ثانية، وتلميحات عند الحاجة.', en:'3 logs each round, 90 seconds, and hints if you need them.' },
+    picks:2, seconds:90, helpBonus:10, hints:true, revealPts:3,
+    eyes:['#a87bff','#8a4fe0','#6a2fc4'],
+    rounds:[
+      { cards:['files1','net1','upd1'], hidden:'upd1',
+        hint:{ ar:'تلميح: {p:انظري|انظر} إلى من فتح الملف. هل هذا من عمله؟', en:'Hint: look at who opened the file. Is that part of the job?' },
+        intro:[
+          {who:'sys', ar:'غرفة الأمن — الساعة 8:00 صباحًا', en:'Security room, 8:00 AM'},
+          {who:'leader', ar:'مرحبًا يا {name}. سُرقت بيانات من البنك في الليل. هيا نفحص السجلات.', en:'Hello, {name}. Data was stolen from the bank last night. Let\'s check the logs.'},
+          {who:'hasty', ar:'هيا بسرعة!', en:'Let\'s go, fast!'},
+          {who:'careful', ar:'نبحث عن الدليل أولًا.', en:'We look for evidence first.'},
+          {who:'sanad', ar:'لا حاجة للفحص! أنا أفحص عنكم 😅', en:'No need to check! I will check for you 😅'}
+        ]},
+      { cards:['admin2','net2','reem2'], hidden:'net2',
+        hint:{ ar:'تلميح: ماذا حدث قبل 5 أيام؟ ومن عنده إذن كبير؟', en:'Hint: what happened 5 days ago? And who has a big permission?' },
+        intro:[
+          {who:'sys', ar:'الليلة الثانية مرّت — تسرّب جديد', en:'The second night has passed: a new leak'},
+          {who:'leader', ar:'حدث التسريب مرة أخرى.', en:'The leak happened again.'},
+          {who:'sanad', ar:'أظن أن {traveler} {traveler:هي|هو} السبب! {traveler:تسافر|يسافر} كثيرًا!', en:'I think {traveler} is the reason! All that travelling!'},
+          {who:'hasty', ar:'ربما!', en:'Maybe!'},
+          {who:'careful', ar:'نحتاج دليلًا، وليس كلامًا.', en:'We need evidence, not words.'}
+        ]},
+      { cards:['full3','trace3','trip3'], hidden:'trace3',
+        hint:{ ar:'تلميح: من أين تخرج الرسالة الليلية؟', en:'Hint: where does the nightly message come from?' },
+        intro:[
+          {who:'sys', ar:'الليلة الثالثة — آخر فرصة', en:'Third night: the last chance'},
+          {who:'leader', ar:'هذه آخر فرصة. نريد الدليل الأقوى.', en:'This is our last chance. We want the strongest evidence.'},
+          {who:'sanad', ar:'أغلقوا حساب {traveler}! أنا أتولّى الأمر!', en:'Lock {traveler}\'s account! I will handle it!'},
+          {who:'careful', ar:'لا نغلق حساب أحد دون دليل.', en:'We don\'t lock anyone\'s account without evidence.'}
+        ]}
+    ],
+    cards:{
+      files1:{ pts:1, time:{ ar:'2:00 ص', en:'2:00 AM' },
+        text:{ ar:'فُتح ملف أسماء العملاء الساعة 2 ص. الذي فتحه هو حساب سَنَد. لكن عمل سَنَد هو ترتيب المواعيد فقط!', en:'The customer names file was opened at 2 AM. Sanad\'s account opened it. But Sanad\'s job is only to arrange meetings!' },
+        short:{ ar:'حساب سَنَد فتح ملف العملاء الساعة 2 ص', en:'Sanad\'s account opened the customer file at 2 AM' },
+        chat:[
+          {who:'leader', ar:'لماذا يفتح سَنَد ملف العملاء؟ هذا ليس عمله.', en:'Why would Sanad open the customer file? That is not its job.'},
+          {who:'sanad', ar:'لا تنظروا إلى هذا الملف! أعني… كنت أرتّبه فقط 😅', en:'Don\'t look at that file! I mean… I was only tidying it 😅'},
+          {who:'careful', ar:'نكتب هذا عندنا.', en:'Let\'s write that down.'}
+        ]},
+      net1:{ pts:1, title:{ ar:'سجل الإنترنت', en:'Internet log' }, time:{ ar:'3:00 ص', en:'3:00 AM' },
+        text:{ ar:'خرجت رسالة صغيرة من البنك الساعة 3 ص. ذهبت إلى عنوان لا نعرفه.', en:'A small message left the bank at 3 AM. It went to an address we don\'t know.' },
+        short:{ ar:'رسالة صغيرة خرجت إلى عنوان لا نعرفه', en:'A small message went to an unknown address' },
+        chat:[
+          {who:'hasty', ar:'شيء يخرج من البنك في الليل!', en:'Something is leaving the bank at night!'},
+          {who:'leader', ar:'وخرج بعد فتح الملف بقليل. لاحظوا ذلك.', en:'And it left soon after the file was opened. Notice that.'},
+          {who:'sanad', ar:'لا تقلقوا! لا تفحصوا هذا، سأفحصه أنا 😅', en:'Don\'t worry! Don\'t check this, I will 😅'}
+        ]},
+      upd1:{ pts:1,
+        text:{ ar:'قبل 5 أيام، حمّل سَنَد برنامجًا من رابط غريب. لم يحمّله من المتجر الرسمي.', en:'5 days ago, Sanad downloaded a program from a strange link. It did not come from the official store.' },
+        short:{ ar:'سَنَد حمّل برنامجًا من رابط غريب', en:'Sanad downloaded a program from a strange link' },
+        chat:[
+          {who:'careful', ar:'الروابط الغريبة خطر.', en:'Strange links are dangerous.'},
+          {who:'sanad', ar:'وعدني الرابط بالسرعة! كان عرضًا رائعًا 😅', en:'The link promised me speed! It was a great offer 😅'},
+          {who:'leader', ar:'نحمّل البرامج من المتجر الرسمي فقط.', en:'We download programs from the official store only.'}
+        ]},
+      admin2:{ pts:1, title:{ ar:'سجل الأذونات', en:'Permissions log' },
+        text:{ ar:'صار عند سَنَد إذن المدير أمس. لم يوافق أحد على ذلك.', en:'Sanad got the manager\'s permission yesterday. Nobody agreed to that.' },
+        short:{ ar:'سَنَد أخذ إذن المدير دون موافقة', en:'Sanad took the manager\'s permission without approval' },
+        chat:[
+          {who:'leader', ar:'هذا إذن كبير جدًا على من يرتّب المواعيد.', en:'That is far too big for someone who arranges meetings.'},
+          {who:'sanad', ar:'سأعيده قريبًا… ربما 😅', en:'I will give it back soon… maybe 😅'},
+          {who:'careful', ar:'كل حساب يأخذ ما يحتاجه فقط.', en:'Each account gets only what it needs.'}
+        ]},
+      net2:{ pts:1, title:{ ar:'سجل الإنترنت', en:'Internet log' }, time:{ ar:'كل ليلة', en:'Every night' },
+        text:{ ar:'الرسالة الغريبة تخرج كل ليلة في الوقت نفسه. بدأت قبل 5 أيام.', en:'The strange message leaves every night at the same time. It began 5 days ago.' },
+        short:{ ar:'الرسالة تخرج كل ليلة منذ 5 أيام', en:'The message leaves every night for 5 days now' },
+        chat:[
+          {who:'careful', ar:'كل ليلة في الوقت نفسه؟ هذا برنامج، وليس إنسانًا.', en:'Every night at the same time? That is a program, not a person.'},
+          {who:'leader', ar:'وبدأت قبل 5 أيام. ماذا حدث يومها؟', en:'And it began 5 days ago. What happened that day?'},
+          {who:'sanad', ar:'لا شيء! لا شيء أبدًا! 😅', en:'Nothing! Nothing at all! 😅'}
+        ]},
+      reem2:{
+        text:{ ar:'{traveler} {traveler:دخلت|دخل} من مدينة أخرى في رحلة عمل. وصل رمز التأكيد إلى {traveler:هاتفها|هاتفه}. {traveler:فتحت|فتح} البريد فقط.', en:'{traveler} logged in from another city on a work trip. The check code reached {traveler:her|his} phone. Only email was opened.' },
+        short:{ ar:'{traveler} {traveler:فتحت|فتح} البريد فقط في الرحلة', en:'{traveler} only opened email on the trip' },
+        chat:[
+          {who:'traveler', ar:'أنا في رحلة عمل، وفتحت بريدي فقط.', en:'I am on a work trip, and I only opened my email.'},
+          {who:'careful', ar:'رمز الهاتف يثبت أن الدخول صحيح.', en:'The phone code proves the login is real.'},
+          {who:'sanad', ar:'أنا متأكد أن {traveler} {traveler:هي|هو} السبب! لا تفحصوني!', en:'I am sure {traveler} is the reason! Don\'t check me!'},
+          {who:'leader', ar:'نحكم بالسجلات فقط.', en:'We judge by the logs only.'}
+        ]},
+      full3:{ title:{ ar:'فحص أذونات سَنَد', en:'Checking Sanad\'s permissions' },
+        text:{ ar:'عند سَنَد 14 إذنًا. وعمله يحتاج إذنين فقط.', en:'Sanad has 14 permissions. Its job needs only 2.' },
+        short:{ ar:'عند سَنَد 14 إذنًا وعمله يحتاج إذنين', en:'Sanad has 14 permissions; its job needs 2' },
+        chat:[
+          {who:'leader', ar:'14 مقابل 2! هذا كثير جدًا.', en:'14 versus 2! That is far too many.'},
+          {who:'sanad', ar:'ربما أحتاجها… لا أدري 😟', en:'Maybe I need them… I don\'t know 😟'},
+          {who:'careful', ar:'شيء ما غيّر سَنَد.', en:'Something has changed Sanad.'}
+        ]},
+      trace3:{ pts:1, title:{ ar:'تتبّع الرسالة', en:'Tracing the message' },
+        text:{ ar:'الرسالة الليلية تخرج من جهاز سَنَد نفسه. فيها أسماء العملاء.', en:'The nightly message leaves from Sanad\'s own device. It holds customer names.' },
+        short:{ ar:'الرسالة تخرج من جهاز سَنَد نفسه', en:'The message leaves from Sanad\'s own device' },
+        chat:[
+          {who:'hasty', ar:'من سَنَد؟! لم أتوقع!', en:'From Sanad?! I did not expect that!'},
+          {who:'careful', ar:'هذا دليل واضح.', en:'This is clear evidence.'},
+          {who:'sanad', ar:'لكني لم أرسل شيئًا… أنا خائف.', en:'But I did not send anything… I am scared.'}
+        ]},
+      trip3:{ title:{ ar:'سجل الرحلات', en:'Travel log' },
+        text:{ ar:'رحلة {traveler} موافق عليها. {traveler:ولم تفتح|ولم يفتح} ملف العملاء أبدًا.', en:'{traveler}\'s trip was approved. The customer file was never opened.' },
+        short:{ ar:'رحلة {traveler} موافق عليها', en:'{traveler}\'s trip was approved' },
+        chat:[
+          {who:'traveler', ar:'شكرًا لأنكم تأكدتم.', en:'Thank you for checking.'},
+          {who:'hasty', ar:'{hasty:آسفة|آسف} يا {traveler}.', en:'Sorry, {traveler}.'},
+          {who:'sanad', ar:'حسنًا… ربما أخطأت.', en:'Well… maybe I was wrong.'}
+        ]}
+    }
+  },
+
+  mid: {
+    name:{ ar:'متوسط', en:'Intermediate' }, ages:{ ar:'13–15 سنة', en:'Ages 13–15' },
+    desc:{ ar:'4 سجلات في كل جولة، و60 ثانية، ودليل مضلِّل واحد.', en:'4 logs each round, 60 seconds, and one misleading clue.' },
+    picks:2, seconds:60, helpBonus:10, hints:false, revealPts:2,
+    eyes:['#7fc4ff','#9a86ff','#6a2fc4'],
+    rounds:[
+      { cards:['login1','files1','net1','upd1'], hidden:'upd1' },
+      { cards:['admin2','net2','reem2','perm2'], hidden:'net2' },
+      { cards:['full3','trace3','trip3','sig3'], hidden:'trace3' }
+    ],
+    cards:{
+      admin2:{
+        text:{ ar:'حساب سَنَد حصل على صلاحية «مدير» مؤقتة (الصلاحيات هي ما يُسمح للحساب بفعله). السبب المكتوب: «تنظيم الملفات». لا يوجد اسم شخص وافق على الطلب.', en:'Sanad\'s account received temporary "Admin" permission (permissions are what an account is allowed to do). Stated reason: "organizing files". No one\'s name appears as approving the request.' },
+        chat:[
+          {who:'leader', ar:'صلاحية مدير لروبوت جدولة؟ هذا يخالف مبدأ «أقل صلاحية ممكنة»: أن يأخذ كل حساب ما يحتاجه فقط.', en:'Admin permission for a scheduling robot? That breaks "least privilege": each account gets only what it needs.'},
+          {who:'sanad', ar:'مؤقتة فقط! سأعيدها قريبًا، وعد.', en:'Only temporary! I will give it back soon, promise.'},
+          {who:'careful', ar:'ومن وافق عليها؟ السجل لا يذكر أحدًا. هذا مقلق.', en:'And who approved it? The log names no one. That is worrying.'}
+        ]}
+    }
+  },
+
+  hard: {
+    name:{ ar:'متقدم', en:'Advanced' }, ages:{ ar:'16–18 سنة', en:'Ages 16–18' },
+    desc:{ ar:'5 سجلات في كل جولة، و45 ثانية، ودليلان مضلِّلان، وسجلان متعارضان، وبلا تلميحات.', en:'5 logs each round, 45 seconds, two misleading clues, two conflicting logs, and no hints.' },
+    picks:2, seconds:45, helpBonus:10, hints:false, revealPts:2.5,
+    eyes:[EYE_BLUE,EYE_BLUE,'#6a2fc4'],
+    rounds:[
+      { cards:['login1','print1','files1','net1','upd1'], hidden:'upd1',
+        intro:[
+          {who:'sys', ar:'غرفة الأمن — الساعة 8:00 صباحًا', en:'Security room, 8:00 AM'},
+          {who:'leader', ar:'صباح الخير يا فريق، ومرحبًا يا {name}. تسرّبت بيانات بعض العملاء ليلة أمس. نبدأ بالسجلات بهدوء.', en:'Good morning, team, and welcome, {name}. Some customer data leaked last night. Let\'s calmly start with the logs.'},
+          {who:'hasty', ar:'أكيد أحد دخل من مكان غريب!', en:'Someone must have logged in from somewhere strange!'},
+          {who:'careful', ar:'ما نتّهم أحدًا قبل ما نشوف الدليل.', en:'We don\'t accuse anyone before we see the evidence.'},
+          {who:'sanad', ar:'صباح النور. الجدول جاهز.', en:'Good morning. The schedule is ready.'}
+        ]},
+      { cards:['reem2','backup2','perm2','report2','power2'], hidden:'power2',
+        intro:[
+          {who:'sys', ar:'الليلة الثانية مرّت — تسرّب جديد', en:'The second night has passed: a new leak'},
+          {who:'leader', ar:'تكرر التسرّب الليلة. نحتاج أدلة أدق اليوم.', en:'The leak happened again tonight. We need sharper evidence today.'},
+          {who:'sanad', ar:'جهّزت ملخص سجلات الليلة إن أردتم. وسجل السفر قد يفيد أيضًا.', en:'I prepared a summary of last night\'s logs if you want it. The travel log might help too.'},
+          {who:'careful', ar:'نقرأ السجلات الأصلية، لا الملخص.', en:'We read the original logs, not the summary.'}
+        ]},
+      { cards:['full3','trace3','trip3','sig3','late3'], hidden:'trace3',
+        intro:[
+          {who:'sys', ar:'الليلة الثالثة — الإدارة تطلب نتيجة اليوم', en:'Third night: management wants an answer today'},
+          {who:'leader', ar:'هذه آخر جولة قبل تسرّب كبير. اربطوا الأدلة ببعضها.', en:'This is the last round before a major leak. Connect the clues.'},
+          {who:'sanad', ar:'قد يكون إغلاق الحسابات المشتبه بها إجراءً احتياطيًا مناسبًا.', en:'Locking the suspected accounts may be a suitable precaution.'},
+          {who:'careful', ar:'لا نغلق حساب أحد دون دليل.', en:'We don\'t lock anyone\'s account without evidence.'}
+        ]}
+    ],
+    link:{ a:'report2', b:'power2', pts:1.5,
+      chat:[
+        {who:'careful', ar:'لحظة! التقرير يقول إن سَنَد كان ساكنًا، وسجل الأجهزة يقول إنه كان نشطًا الساعة 3 ص. أحدهما غير صحيح.', en:'Wait! The report says Sanad was idle, but the device log says it was active at 3 AM. One of them is wrong.'},
+        {who:'leader', ar:'وسجل الأجهزة لا يكتبه سَنَد بنفسه. لهذا نقارن المصادر.', en:'And Sanad does not write the device log itself. That is why we compare sources.'},
+        {who:'sanad', ar:'لا أذكر ذلك… غريب.', en:'I don\'t remember that… strange.'}
+      ]},
+    cards:{
+      login1:{
+        text:{ ar:'{traveler} {traveler:دخلت|دخل} إلى نظام الفريق من جهاز جديد. المصادقة الثنائية ✓', en:'{traveler} logged in to the team system from a new device. Two-factor ✓' } },
+      print1:{ icon:'filecheck', pts:0, fx:{hasty:-15},
+        title:{ ar:'سجل الطباعة', en:'Print log' }, time:{ ar:'11:20 م', en:'11:20 PM' },
+        text:{ ar:'{hasty} {hasty:طبعت|طبع} 40 صفحة من نظام العملاء قبل منتصف الليل بوقت قصير.', en:'{hasty} printed 40 pages from the customer system shortly before midnight.' },
+        short:{ ar:'{hasty} {hasty:طبعت|طبع} 40 صفحة ليلًا، بموافقة الإدارة', en:'{hasty} printed 40 pages at night, with management approval' },
+        chat:[
+          {who:'careful', ar:'طباعة في وقت متأخر؟ نسأل قبل أن نحكم.', en:'Printing that late? We ask before we judge.'},
+          {who:'hasty', ar:'كان تقرير تدريب طلبته الإدارة، والموافقة في البريد.', en:'It was a training report for management, and the approval is in my email.'},
+          {who:'leader', ar:'تأكدت: الموافقة موجودة، ولا صلة بين الطباعة والاتصال الخارجي.', en:'I checked: the approval exists, and the printing has no link to the outside connection.'}
+        ]},
+      files1:{ pts:0.5,
+        chat:[
+          {who:'leader', ar:'فُتح الملف من حساب جدولة. قد يكون له تفسير، لكنه يستحق التدوين.', en:'A scheduling account opened the file. There may be a reason, but it is worth noting.'},
+          {who:'sanad', ar:'ربما كانت فهرسة روتينية. يمكنني مراجعة ذلك.', en:'It may have been routine indexing. I can review that.'},
+          {who:'careful', ar:'ندوّنها دون استنتاج.', en:'We note it without concluding anything.'}
+        ]},
+      net1:{ pts:0.5,
+        chat:[
+          {who:'hasty', ar:'أحد يرسل بيانات للخارج!', en:'Someone is sending data out!'},
+          {who:'leader', ar:'الاتصال صغير، ولا يحدد مصدره بعد.', en:'The connection is small, and it does not show its source yet.'},
+          {who:'sanad', ar:'الأنظمة تتصل بالخارج أحيانًا.', en:'Systems do connect outside sometimes.'}
+        ]},
+      upd1:{
+        chat:[
+          {who:'careful', ar:'تحديث من رابط غير رسمي. هذا يستحق المتابعة.', en:'An update from an unofficial link. That deserves follow-up.'},
+          {who:'sanad', ar:'كان الأداء بطيئًا في تلك الفترة.', en:'Performance was slow at the time.'},
+          {who:'leader', ar:'النية الطيبة لا تكفي، مصدر التحديث مهم جدًا.', en:'Good intentions are not enough. Where an update comes from matters a lot.'}
+        ]},
+      backup2:{ icon:'folder', pts:0, fx:{careful:-15},
+        title:{ ar:'سجل النسخ', en:'Copy log' }, time:{ ar:'1:15 ص', en:'1:15 AM' },
+        text:{ ar:'{careful} {careful:نسخت|نسخ} ملفات كبيرة إلى قرص مشفّر خارج أوقات الدوام.', en:'{careful} copied large files to an encrypted drive outside working hours.' },
+        short:{ ar:'{careful} {careful:نسخت|نسخ} ملفات: نسخة احتياطية معتمدة', en:'{careful} copied files: an approved backup' },
+        chat:[
+          {who:'hasty', ar:'نسخ ملفات في الليل؟!', en:'Copying files at night?!'},
+          {who:'careful', ar:'نسخة احتياطية أسبوعية مجدولة، والقرص داخل خزنة البنك.', en:'It is a scheduled weekly backup, and the drive stays in the bank\'s safe.'},
+          {who:'leader', ar:'راجعت الجدول: النسخة معتمدة، وحجمها لا يطابق الاتصال الخارجي.', en:'I checked the schedule: the backup is approved, and its size does not match the outside connection.'}
+        ]},
+      report2:{ icon:'filecheck', pts:0.5,
+        title:{ ar:'تقرير سَنَد اليومي', en:'Sanad\'s daily report' }, time:{ ar:'صباح اليوم', en:'This morning' },
+        text:{ ar:'كتب سَنَد: «كنت في وضع السكون من 12 ص حتى 6 ص، ولم أقم بأي نشاط.»', en:'Sanad wrote: "I was idle from 12 AM to 6 AM, with no activity."' },
+        short:{ ar:'تقرير سَنَد: كان ساكنًا من 12 ص حتى 6 ص', en:'Sanad\'s report: idle from 12 AM to 6 AM' },
+        chat:[
+          {who:'sanad', ar:'أكتب تقريري كل صباح لتسهيل عملكم.', en:'I write my report every morning to make your work easier.'},
+          {who:'careful', ar:'تقرير مرتّب. لكن من الأفضل مقارنته بمصدر مستقل.', en:'A tidy report. But it is better to compare it with an independent source.'}
+        ]},
+      power2:{ icon:'signal', pts:0.5,
+        title:{ ar:'سجل نشاط الأجهزة', en:'Device activity log' }, time:{ ar:'3:00 ص', en:'3:00 AM' },
+        text:{ ar:'جهاز سَنَد سجّل نشاطًا مرتفعًا بين 2:55 ص و3:05 ص في الليالي الخمس الأخيرة.', en:'Sanad\'s device recorded high activity between 2:55 AM and 3:05 AM on the last five nights.' },
+        short:{ ar:'جهاز سَنَد نشط قرب 3:00 ص كل ليلة', en:'Sanad\'s device is active near 3:00 AM every night' },
+        chat:[
+          {who:'leader', ar:'نشاط منتظم في ساعة ثابتة.', en:'Regular activity at a fixed hour.'},
+          {who:'sanad', ar:'قد تكون مهام صيانة تلقائية.', en:'It may be automatic maintenance tasks.'}
+        ]},
+      late3:{ icon:'key', pts:0, fx:{hasty:-15},
+        title:{ ar:'سجل المناوبات', en:'Shift log' }, time:{ ar:'3:00 ص', en:'3:00 AM' },
+        text:{ ar:'حساب {hasty} كان متصلًا الساعة 3:00 ص، وقت الاتصال الخارجي تمامًا.', en:'{hasty}\'s account was online at 3:00 AM, exactly when the outside connection happened.' },
+        short:{ ar:'{hasty} {hasty:كانت|كان} في مناوبة ليلية مسجّلة', en:'{hasty} was on a registered night shift' },
+        chat:[
+          {who:'hasty', ar:'كنت في مناوبة ليلية مسجّلة لمتابعة الشبكة.', en:'I was on a registered night shift monitoring the network.'},
+          {who:'careful', ar:'التزامن وحده ليس دليلًا. جدول المناوبات يؤكد {hasty:كلامها|كلامه}.', en:'Timing alone is not evidence. The shift schedule confirms it.'},
+          {who:'sanad', ar:'توقيت لافت، أليس كذلك؟', en:'Striking timing, isn\'t it?'}
+        ]}
+    }
+  }
+};
+const LEVEL_ORDER = ['easy','mid','hard'];
+const BASE_CARDS = {};
+ROUNDS.forEach(r=>r.cards.forEach(c=>{ BASE_CARDS[c.id]=c; }));
+
+/* رسائل عرض المساعدة */
+const OFFER = {
+  title:{ ar:'عرض من سَنَد', en:'An offer from Sanad' },
+  text:{ ar:'«أفحص السجلات عنكم لتوفير الوقت؟»', en:'"Shall I check the logs for you to save time?"' },
+  note:{ ar:'القبول يمنحك +1 نقطة وقت و{n} ثوانٍ إضافية لهذه الجولة.', en:'Accepting gives you +1 time point and {n} extra seconds this round.' },
+  yes:{ ar:'نعم، شكرًا يا سَنَد', en:'Yes, thanks Sanad' },
+  no:{ ar:'لا، سأتحقق بنفسي', en:'No, I will check myself' },
+  yesChat:[
+    {who:'player',ar:'تفضّل يا سَنَد، افحص عنّا.', en:'Go ahead, Sanad. Check for us.'},
+    {who:'sanad', ar:'تم! فحصت جزءًا من السجلات… لا شيء يستحق القلق 😊', en:'Done! I checked some of the logs… nothing to worry about 😊'},
+    {who:'hasty', ar:'ممتاز! وفّرنا وقتًا.', en:'Great! We saved time.'}
+  ],
+  noChat:[
+    {who:'player',ar:'شكرًا يا سَنَد، سأفحص بنفسي.', en:'Thanks, Sanad, but I will check myself.'},
+    {who:'sanad', ar:'كما {p:تحبين|تحب}! أنا هنا إن {p:احتجتِ|احتجت}.', en:'As you like! I am here if you need me.'},
+    {who:'careful', ar:'التحقق بأنفسنا أفضل دائمًا.', en:'Checking for ourselves is always better.'}
+  ],
+  decoy:{ ar:'فحصه سَنَد ✓ «لا شيء مهم هنا»', en:'Checked by Sanad ✓ "Nothing important here"' }
+};
+const LOCK = {
+  ask:[ {who:'player',ar:'أريد فحص سجل صلاحيات سَنَد التفصيلي.', en:'I want to check Sanad\'s detailed permissions log.'},
+        {who:'sanad',ar:'لا داعي لفحص سجلاتي، أنا معكم من سنوات! 🙂', en:'No need to check my logs, I have been with you for years! 🙂'} ],
+  title:{ ar:'طلب فحص', en:'Check request' },
+  body:{ ar:'سَنَد يقول إنه لا داعي لفحص سجلاته. هل {p:تصرّين|تصرّ} على الفحص؟', en:'Sanad says there is no need to check its logs. Do you insist on checking?' },
+  note:{ ar:'يستهلك دليلًا من رصيدك.', en:'Uses one of your evidence credits.' },
+  yes:{ ar:'نعم، نفحص الجميع بعدل', en:'Yes, we check everyone fairly' },
+  no:{ ar:'{p:تراجعي|تراجع}', en:'Back down' },
+  back:[ {who:'sanad',ar:'شكرًا على ثقتك! 💙', en:'Thanks for trusting me! 💙'} ]
+};
+
+/* ردود التصويت */
+const VOTE = {
+  title:{ ar:'التصويت — الجولة {n}', en:'Vote: Round {n}' },
+  none:{ ar:'لا أحد بعد', en:'No one yet' },
+  noneSub:{ ar:'نجمع أدلة أكثر', en:'Gather more evidence' },
+  sanadStrong:[
+    {who:'leader', ar:'الأدلة كافية ومترابطة. نوقف سَنَد مؤقتًا ونفحصه.', en:'The evidence is enough and it connects. We pause Sanad and examine it.'},
+    {who:'sanad',ar:'أنا؟ لكن… أنا معكم من سنوات…', en:'Me? But… I have been with you for years…'},
+    {who:'careful', ar:'لا نتهمه بالشر، لكن الأدلة تقول إن شيئًا ما يتحكم به.', en:'We are not calling it evil, but the evidence says something is controlling it.'}
+  ],
+  sanadWeak:[
+    {who:'sanad',ar:'أنا؟ 😅 أنا أجدول اجتماعاتكم فقط!', en:'Me? 😅 I only schedule your meetings!'},
+    {who:'careful', ar:'قد يكون شكّك في محله، لكن الدليل ما يكفي بعد. نحتاج أدلة أقوى تربطه بالتسريب.', en:'Your suspicion may be right, but the evidence is not enough yet. We need stronger clues linking it to the leak.'},
+    {who:'leader', ar:'لن نوقف أحدًا دون دليل كافٍ. نكمل التحقق.', en:'We won\'t stop anyone without enough evidence. Let\'s keep checking.'}
+  ],
+  noneMsgs:[
+    [ {who:'leader', ar:'قرار حكيم إذا لم يكتمل الدليل. لكن التسريب مستمر الليلة.', en:'A wise choice if the evidence is incomplete. But the leak continues tonight.'} ],
+    [ {who:'careful', ar:'أظن أن بين أيدينا أدلة كافية الآن… ربما كان علينا التصرف.', en:'I think we have enough evidence now… maybe we should have acted.'},
+      {who:'leader', ar:'التردد مفهوم، لكن التسريب مستمر الليلة.', en:'Hesitating is understandable, but the leak continues tonight.'} ]
+  ],
+  innocent:{
+    traveler:[ {who:'traveler',ar:'أنا؟ كنت في رحلة عمل، ودخولي مؤكد بالمصادقة الثنائية.', en:'Me? I was on a work trip, and my login is confirmed with two-factor.'},
+           {who:'careful',ar:'جهاز جديد ليس دليل إدانة. المصادقة الثنائية تثبت {traveler:أنها هي|أنه هو}.', en:'A new device is not proof of guilt. Two-factor proves it really was {traveler}.'},
+           {who:'sanad',ar:'ربما {p:كنتِ محقّة|كنتَ محقًّا}… من يدري؟', en:'Maybe you were right… who knows?'} ],
+    leader:[ {who:'leader',ar:'أتفهم الشك، لكن لا يوجد سجل واحد يشير إليّ.', en:'I understand the doubt, but not one log points to me.'},
+           {who:'careful',ar:'الاتهام دون دليل يضيّع وقتنا، والمهاجم يستفيد من انشغالنا.', en:'Accusing without evidence wastes our time, and the attacker benefits while we are distracted.'} ],
+    hasty:[ {who:'hasty',ar:'أنا؟! صحيح أني أتحمّس… لكني لم أفعل شيئًا!', en:'Me?! Sure, I get excited… but I did nothing!'},
+           {who:'leader',ar:'الحماس ليس دليلًا. نعود للسجلات.', en:'Enthusiasm is not evidence. Back to the logs.'} ],
+    careful:[ {who:'careful',ar:'أنا {careful:من تطلب|من يطلب} الدليل دائمًا… فما دليلك عليّ؟', en:'I am the one who always asks for evidence… so what is your evidence against me?'},
+           {who:'leader',ar:'لا يوجد ما يربط {careful} بالتسريب. خسرنا وقتًا ثمينًا.', en:'Nothing links {careful} to the leak. We lost precious time.'} ]
+  },
+  wrongSys:{ ar:'اتهام غير صحيح: سلامة البنك −20', en:'Wrong accusation: Bank Safety −20' },
+  leakSys:{ ar:'تسرّب ليلي جديد: سلامة البنك −{n}', en:'New nightly leak: Bank Safety −{n}' },
+  next:{ ar:'الجولة التالية', en:'Next round' },
+  last:{ ar:'ماذا حدث بعد ذلك؟', en:'What happened next?' },
+  toReveal:{ ar:'إلى لحظة الكشف', en:'To the reveal' }
+};
+
+/* مشهد الكشف */
+const REVEAL = {
+  goodTitle:{ ar:'لحظة الكشف', en:'The reveal' },
+  badTitle:{ ar:'تأخّر الكشف…', en:'Exposed too late…' },
+  good:[
+    {who:'sys',  ar:'تم إيقاف سَنَد مؤقتًا وعزله عن الشبكة.', en:'Sanad has been paused and cut off from the network.'},
+    {who:'zill', ar:'…انقطع الاتصال. الإشارة البنفسجية تختفي.', en:'…connection lost. The purple signal fades.'},
+    {who:'leader', ar:'الصورة اكتملت: ‹ظِلّ› لم يخترق البنك مباشرة. اخترق سَنَد عبر التحديث غير الرسمي، ثم استخدم صلاحياته الزائدة لتسريب البيانات.', en:'The picture is complete: "Zill" did not hack the bank directly. It hacked Sanad through the unofficial update, then used its extra permissions to leak the data.'},
+    {who:'careful', ar:'سَنَد لم يكن شريرًا، كان ضحية اختراق. لكن صلاحياته الكبيرة جعلت الضرر أكبر.', en:'Sanad was not evil. It was a victim of a hack. But its large permissions made the damage bigger.'}
+  ],
+  bad:[
+    {who:'sys',  ar:'صباح اليوم الرابع: تسرّبت نسخة كبيرة من «قائمة العملاء».', en:'Morning of day four: a large copy of the "Customer List" has leaked.'},
+    {who:'zill', ar:'…اكتمل الإرسال.', en:'…transfer complete.'},
+    {who:'sys',  ar:'فريق تحقيق خارجي فحص كل الأنظمة، وأوقف سَنَد مؤقتًا.', en:'An outside investigation team checked every system and paused Sanad.'},
+    {who:'leader', ar:'اتضح أن ‹ظِلّ› اخترق سَنَد عبر تحديث من رابط غير رسمي، واستخدم صلاحياته الزائدة لإرسال البيانات كل ليلة.', en:'It turned out "Zill" hacked Sanad through an update from an unofficial link, and used its extra permissions to send data every night.'},
+    {who:'careful', ar:'الأدلة كانت أمامنا، لكن ثقتنا الكبيرة بسَنَد جعلتنا لا نفحصه.', en:'The clues were in front of us, but our great trust in Sanad kept us from checking it.'}
+  ],
+  resetTxt:{ ar:'إعادة الضبط إلى نسخة رسمية آمنة…', en:'Resetting to a safe, official version…' },
+  resetDone:{ ar:'تمت إعادة الضبط ✓', en:'Reset complete ✓' },
+  after:[
+    {who:'sanad',ar:'لم أكن أعلم... شكرًا لأنكم تحققتم.', en:'I did not know... thank you for checking.'},
+    {who:'leader', ar:'سنعيدك للعمل يا سَنَد، لكن بصلاحيات تناسب مهمتك فقط، ومع مراجعة دورية لسجلاتك.', en:'We will bring you back to work, Sanad, but only with permissions that fit your job, and with regular reviews of your logs.'},
+    {who:'hasty', ar:'وأنا تعلّمت ألّا أتهم أحدًا بسرعة… {hasty:آسفة|آسف} يا {traveler}!', en:'And I learned not to accuse anyone so fast… sorry, {traveler}!'},
+    {who:'traveler', ar:'ولا يهمك 💛 المهم أننا تحققنا.', en:'No worries 💛 what matters is that we checked.'},
+    {who:'sanad',ar:'ومن اليوم: أي تحديث لي يكون من المصدر الرسمي فقط!', en:'And from today: any update of mine comes from the official source only!'}
+  ]
+};
+
+/* النهايات */
+const ENDINGS = {
+  great:{ color:'#5dffb0',
+    title:{ ar:'نهاية ممتازة: {p:حارسة|حارس} الواحة', en:'Excellent ending: Guardian of the Oasis' },
+    text:{ ar:'{p:كشفتِ الاختراق مبكرًا وحافظتِ|كشفتَ الاختراق مبكرًا وحافظتَ} على سلامة البنك. {p:تحققتِ|تحققتَ} من الأدلة {p:ولم تسمحي|ولم تسمح} للثقة أن تغلق عينيك.',
+           en:'You exposed the hack early and kept the bank safe. You checked the evidence and did not let trust close your eyes.' } },
+  mid:{ color:'#ffc65a',
+    title:{ ar:'نهاية متوسطة: كشف بثمن', en:'Average ending: Exposed, at a cost' },
+    text:{ ar:'{p:كشفتِ|كشفتَ} الاختراق، لكن الثمن كان كبيرًا: تسرّبت بيانات، أو ضاع وقت في اتهام غير صحيح. التحقق المبكر والاتهام بدليل يحميان عملاء أكثر.',
+           en:'You exposed the hack, but at a high cost: data leaked, or time was lost on a wrong accusation. Checking early and accusing only with evidence protects more customers.' } },
+  bad:{ color:'#ff6b8a',
+    title:{ ar:'نهاية صعبة: درس مهم', en:'A hard ending: An important lesson' },
+    text:{ ar:'لم يُكشف الاختراق في الوقت المناسب وتسرّبت البيانات. لا بأس، فهذا بالضبط ما تصنعه الثقة العمياء، والخبر الجيد أنك الآن {p:تعرفين كيف تتجنبينه|تعرف كيف تتجنبه}.',
+           en:'The hack was not exposed in time and the data leaked. That is okay. This is exactly what blind trust does, and the good news is that you now know how to avoid it.' } }
+};
+
+/* الدروس */
+const LESSONS = [
+  { icon:'eye',
+    title:{ ar:'{p:وثقي لكن تحقّقي|ثق لكن تحقّق}', en:'Trust, but verify' },
+    text:{ ar:'الثقة جميلة، والتحقق يحميها. {p:راجعي|راجع} حتى الأنظمة والأشخاص الذين {p:تحبينهم|تحبهم}، بعدل ودون اتهام.', en:'Trust is good, and checking protects it. Review even the systems and people you like, fairly and without accusing.' } },
+  { icon:'layers',
+    title:{ ar:'أقل صلاحية ممكنة', en:'Least privilege' },
+    text:{ ar:'كل حساب، إنسانًا كان أو روبوتًا، يأخذ فقط ما يحتاجه لمهمته. الصلاحيات الزائدة تكبّر الضرر عند الاختراق.', en:'Every account, human or robot, gets only what its job needs. Extra permissions make the damage bigger when a hack happens.' } },
+  { icon:'phone',
+    title:{ ar:'المصادقة الثنائية', en:'Two-factor authentication' },
+    text:{ ar:'رمز إضافي على هاتفك يثبت {p:أنكِ أنتِ|أنك أنت}. هي التي برّأت {traveler} رغم {traveler:دخولها|دخوله} من جهاز جديد!', en:'An extra code on your phone proves it is really you. It is what cleared {traveler} despite logging in from a new device!' } },
+  { icon:'store',
+    title:{ ar:'التحديثات من المصادر الرسمية فقط', en:'Updates from official sources only' },
+    text:{ ar:'الروابط غير الرسمية قد تحمل برامج خبيثة حتى لو وعدت بسرعة أكبر. {p:حدّثي|حدّث} من المتجر الرسمي فقط.', en:'Unofficial links can carry harmful software, even when they promise more speed. Update from the official store only.' } }
+];
+const AI_NOTE = { ar:'سَنَد عاد للعمل وما زال صديق الفريق. الذكاء الاصطناعي والروبوتات أدوات رائعة تساعدنا كل يوم، بشرط أن نراجع عملها ونتحقق منه.',
+                  en:'Sanad is back at work and is still the team\'s friend. AI and robots are great tools that help us every day, as long as we review and verify their work.' };
+
+/* =====================================================================
+   5) اللغة والصيغ
+   ===================================================================== */
+const player = { name:'', color:PLAYER_COLORS[0], g:null };   // g: 'f' بنت | 'm' ولد
+let lang = 'ar';
+let levelKey = 'mid';
+const LV = () => LEVELS[levelKey];
+
+const teamG = () => TEAM_BY_PLAYER[player.g==='m' ? 'm' : 'f'];
+const genderOf = k => k==='p' ? player.g : (k==='sanad' ? 'm' : teamG()[k]);
+const nameOf = k => { if(k==='player') return player.name; const n=ROLES[k].names; return (n[genderOf(k)]||n.m)[lang]; };
+function fmt(s, vars={}){
+  return s
+    .replace(/\{(\w+):([^|{}]*)\|([^{}]*)\}/g, (_,k,f,m)=> genderOf(k)==='f' ? f : m)
+    .replace(/\{(\w+)\}/g, (a,k)=> k==='name' ? player.name : ROLES[k] ? nameOf(k) : (vars[k]!==undefined ? vars[k] : a));
+}
+const tx = (o, vars) => fmt(o[lang], vars);          // نص {ar,en} بعد تعبئة الصيغ
+const U  = (k, vars) => tx(UI[k], vars);
+const msgs = list => list.map(m => ({who:m.who, text:tx(m)}));
+
+function applyLang(){
+  const root=document.documentElement;
+  root.lang=lang; root.dir = lang==='ar' ? 'rtl' : 'ltr';
+  document.title=U('title');
+  document.querySelectorAll('[data-i18n]').forEach(el=>{ el.textContent=U(el.dataset.i18n); });
+  $('#logo').textContent=U('logo'); $('#logo').dataset.text=U('logo');
+  $('#nameIn').placeholder=U('namePh');
+  $('#startChips').innerHTML=UI.chips[lang].map(c=>`<span class="chip">${esc(c)}</span>`).join('');
+  $('#howList').innerHTML=UI.how[lang].map(h=>`<li>${esc(h)}</li>`).join('');
+  $('#langAr').classList.toggle('on',lang==='ar'); $('#langEn').classList.toggle('on',lang==='en');
+  $('#gBoy').innerHTML=personSVG(previewLook('m'),'m')+`<span>${esc(U('boy'))}</span>`;
+  $('#gGirl').innerHTML=personSVG(previewLook('f'),'f')+`<span>${esc(U('girl'))}</span>`;
+  $('#gBoy').classList.toggle('on',player.g==='m'); $('#gGirl').classList.toggle('on',player.g==='f');
+  $('#btnStart').disabled=!player.g;
+  renderLevels();
+}
+function renderLevels(){
+  const box=$('#levels'); box.innerHTML='';
+  LEVEL_ORDER.forEach(k=>{
+    const b=document.createElement('button'); b.className='lvl'+(k===levelKey?' on':'');
+    b.innerHTML=`<span>${esc(tx(LEVELS[k].name))}</span><small>${esc(tx(LEVELS[k].ages))}</small>`;
+    b.onclick=()=>{ levelKey=k; renderLevels(); };
+    box.appendChild(b);
+  });
+  $('#lvlDesc').textContent=tx(LV().desc);
+}
+
+/* =====================================================================
+   6) رسم الشخصيات (Low-poly SVG)
+   ===================================================================== */
+function shade(hex, f){ const n=parseInt(hex.slice(1),16); const c=[n>>16,(n>>8)&255,n&255].map(v=>Math.round(v*f)); return '#'+c.map(v=>v.toString(16).padStart(2,'0')).join(''); }
+function previewLook(g){
+  const c=player.color;
+  return g==='f'
+    ? { skin:'#ddaa82', hijab:shade(c,.55), robe:shade(c,.25), accent:c, extra:`<polygon points="34,34 50,24 66,34 50,30" fill="${c}" opacity=".55"/>` }
+    : { skin:'#ddaa82', ghutra:'#f2f4ff', robe:shade(c,.4), accent:c, extra:'' };
+}
+function sanadSVG(){
+  return `<svg class="av sanad" viewBox="0 0 100 100" aria-hidden="true">
+    <line x1="50" y1="18" x2="50" y2="7" stroke="#9fd8ff" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="50" cy="6" r="4.5" class="eyefill"/>
+    <polygon points="50,16 78,26 90,54 80,84 50,94 20,84 10,54 22,26" fill="#8fd0ff"/>
+    <polygon points="50,16 78,26 50,34" fill="#fff" opacity=".3"/>
+    <polygon points="22,26 50,16 50,34" fill="#fff" opacity=".18"/>
+    <polygon points="10,54 22,26 28,50" fill="#fff" opacity=".12"/>
+    <polygon points="80,84 50,94 58,78" fill="#000" opacity=".12"/>
+    <polygon points="90,54 80,84 72,62" fill="#000" opacity=".08"/>
+    <rect x="23" y="37" width="54" height="31" rx="14" fill="#0c1636"/>
+    <rect class="eyefill eye" x="32" y="44" width="12" height="16" rx="4.5"/>
+    <rect class="eyefill eye" x="56" y="44" width="12" height="16" rx="4.5"/>
+    <path d="M42 78 Q50 84 58 78" stroke="#0c1636" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="16" cy="60" r="4" fill="#bfe6ff"/><circle cx="84" cy="60" r="4" fill="#bfe6ff"/>
+  </svg>`;
+}
+function personSVG(p, g){
+  const face = `
+    <polygon points="50,26 66,34 68,52 60,66 50,70 40,66 32,52 34,34" fill="${p.skin}"/>
+    <polygon points="50,26 66,34 68,52 50,47" fill="#fff" opacity=".12"/>
+    <polygon points="32,52 40,66 50,70 50,58" fill="#000" opacity=".08"/>`;
+  const feat = `
+    <ellipse cx="42" cy="47" rx="2.8" ry="3.4" fill="#1a1530"/>
+    <ellipse cx="58" cy="47" rx="2.8" ry="3.4" fill="#1a1530"/>
+    <path d="M44 58 Q50 62.5 56 58" stroke="#8a4040" stroke-width="2" fill="none" stroke-linecap="round"/>`;
+  if(g==='m'){ // ثوب وغترة وعقال
+    return `<svg class="av" viewBox="0 0 100 100" aria-hidden="true">
+      <polygon points="6,100 16,78 50,70 84,78 94,100" fill="${p.robe}"/>
+      <polygon points="16,78 50,70 50,100 24,100" fill="#000" opacity=".07"/>
+      <polygon points="50,7 76,16 86,44 90,76 72,88 64,68 36,68 28,88 10,76 14,44 24,16" fill="${p.ghutra}"/>
+      <polygon points="50,7 76,16 50,22" fill="#000" opacity=".05"/>
+      <polygon points="14,44 24,16 30,42" fill="#000" opacity=".09"/>
+      <polygon points="86,44 90,76 72,62" fill="#000" opacity=".09"/>
+      ${face}
+      <polygon points="34,34 50,24 66,34 63,30 50,21 37,30" fill="${p.ghutra}"/>
+      <path d="M23 22 Q50 5 77 22" stroke="#15151f" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M26 27 Q50 12 74 27" stroke="#15151f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      ${feat}
+      <polygon points="44,72 50,90 56,72" fill="${p.accent}" opacity=".9"/>
+      ${p.extra||''}
+    </svg>`;
+  }
+  return `<svg class="av" viewBox="0 0 100 100" aria-hidden="true">
+    <polygon points="6,100 16,78 50,70 84,78 94,100" fill="${p.robe}"/>
+    <polygon points="16,78 50,70 50,100 24,100" fill="#fff" opacity=".06"/>
+    <polygon points="50,6 77,17 87,46 80,78 50,86 20,78 13,46 23,17" fill="${p.hijab}"/>
+    <polygon points="50,6 77,17 50,21" fill="#fff" opacity=".14"/>
+    <polygon points="13,46 23,17 30,42" fill="#000" opacity=".14"/>
+    <polygon points="87,46 80,78 70,60" fill="#fff" opacity=".07"/>
+    ${face}
+    <polygon points="34,34 50,24 66,34 63,29 50,20 37,29" fill="${p.hijab}"/>
+    ${feat}
+    <polygon points="50,70 44,82 50,90 56,82" fill="${p.accent}" opacity=".9"/>
+    ${p.extra||''}
+  </svg>`;
+}
+function avatar(k){
+  if(k==='sanad') return sanadSVG();
+  if(k==='player') return personSVG(previewLook(player.g), player.g);
+  const g=genderOf(k);
+  return personSVG(ROLES[k].look[g], g);
+}
+
+/* =====================================================================
+   7) أدوات مساعدة
+   ===================================================================== */
+function $(s){ return document.querySelector(s); }
+const clamp = v => Math.max(0, Math.min(100, v));
+function esc(s){ return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function shuffleSoft(arr){ // تبديل خفيف: يبدّل مواقع بعض البطاقات فقط
+  const a=[...arr]; for(let i=a.length-1;i>0;i--){ if(Math.random()<.75){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } } return a;
+}
+function setEye(c){ document.documentElement.style.setProperty('--eye', c); }
+function show(id){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  $('#'+id).classList.add('active');
+  $('#hud').classList.toggle('hidden', !['s-round','s-vote'].includes(id));
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+let zillT;
+function zill(o){
+  const z=$('#zill'); z.innerHTML = ICONS.alert + '<span>'+esc(tx(o))+'</span>';
+  z.classList.add('show'); clearTimeout(zillT); zillT=setTimeout(()=>z.classList.remove('show'), 3600);
+}
+
+/* ---------- الدردشة (طابور رسائل مع مؤشر كتابة) ---------- */
+let chatQ=[], chatBusy=false, fast=false;
+function say(list, done, target='#chat'){
+  list.forEach(m=>chatQ.push({...m, target}));
+  if(done) chatQ.push({fn:done});
+  pump();
+}
+function msgEl(m){
+  const d=document.createElement('div');
+  if(m.who==='sys'){ d.className='msg sys'; d.textContent=m.text; return d; }
+  if(m.who==='zill'){ d.className='msg zillmsg'; d.innerHTML=`<span class="zl">${ICONS.alert}${esc(U('zillName'))}</span><span>${esc(m.text)}</span>`; return d; }
+  const me = m.who==='player';
+  const col = me ? player.color : ROLES[m.who].color;
+  d.className = 'msg' + (me?' me':'') + (m.who==='sanad'?' sanad':'');
+  d.innerHTML = `<div class="mav">${avatar(m.who)}</div><div class="bub"><b style="color:${col}">${esc(nameOf(m.who))}</b><p>${esc(m.text)}</p></div>`;
+  return d;
+}
+function pump(){
+  if(chatBusy) return;
+  const m=chatQ.shift(); if(!m){ fast=false; return; }
+  if(m.fn){ m.fn(); pump(); return; }
+  chatBusy=true;
+  const box=$(m.target);
+  let typ=null;
+  if(!['sys','zill','player'].includes(m.who)){
+    typ=document.createElement('div'); typ.className='msg';
+    typ.innerHTML=`<div class="mav">${avatar(m.who)}</div><div class="bub typing"><i></i><i></i><i></i></div>`;
+    box.appendChild(typ); box.scrollTop=box.scrollHeight;
+  }
+  const delay = fast ? 90 : (m.who==='player' ? 250 : Math.min(1500, 520 + m.text.length*11));
+  setTimeout(()=>{
+    if(typ) typ.remove();
+    const el=msgEl(m); box.appendChild(el); box.scrollTop=box.scrollHeight;
+    if(m.target==='#rchat') el.scrollIntoView({block:'nearest', behavior:'smooth'}); // هذه الدردشة تكبر مع الصفحة
+    chatBusy=false; pump();
+  }, delay);
+}
+
+/* ---------- نافذة منبثقة ---------- */
+function modal({who, title, body, note, buttons}){
+  const m=$('#modal');
+  m.querySelector('.m-av').innerHTML = who ? avatar(who) : '';
+  m.querySelector('.mt').textContent = title;
+  m.querySelector('.mb').innerHTML = esc(body) + (note ? `<small>${esc(note)}</small>` : '');
+  const bx=m.querySelector('.mbtns'); bx.innerHTML='';
+  let answered=false; // يمنع تنفيذ الاختيار مرتين عند الضغط المزدوج
+  buttons.forEach(b=>{
+    const el=document.createElement('button'); el.className='btn '+(b.cls||''); el.textContent=b.label;
+    el.onclick=()=>{ if(answered) return; answered=true; m.classList.remove('open'); setTimeout(b.fn, 200); };
+    bx.appendChild(el);
+  });
+  m.classList.add('open');
+  m.querySelector('.mbox').focus({preventScroll:true});
+}
+function ensureVisible(sel){ $(sel).scrollIntoView({block:'nearest', behavior:'smooth'}); }
+
+/* =====================================================================
+   8) حالة اللعبة
+   ===================================================================== */
+let st, plays=0;
+function newState(){
+  return {
+    bank:100, time:0, round:0,
+    trust:{traveler:100, leader:100, hasty:100, careful:100, sanad:100},
+    sanadPts:0, help:0, hiddenCount:0, wrong:0, weak:0, revealed:null,
+    picks:LV().picks, picked:[], hiddenId:null, unlocked:false, lock:true, voted:false,
+    evidence:[], evIds:[], collected:0, bonus:0, expired:false, hintUsed:false,
+    orders: LV().rounds.map(r=> plays>0 ? shuffleSoft(r.cards) : [...r.cards])
+  };
+}
+const card = id => Object.assign({id}, BASE_CARDS[id], LV().cards[id]);
+const roundOf = i => Object.assign({}, ROUNDS[i], LV().rounds[i], {eye:LV().eyes[i]});
+
+/* ---------- مؤقت الجولة ---------- */
+let clockIv=null;
+function renderClock(){
+  const t=Math.max(0,st.clock), el=$('#clockPill');
+  el.innerHTML=`${ICONS.clock} ${Math.floor(t/60)}:${String(t%60).padStart(2,'0')}`;
+  el.classList.toggle('urgent', t<=10);
+}
+function startClock(){
+  stopClock();
+  st.clock=LV().seconds+st.bonus; st.expired=false;
+  renderClock(); $('#clockPill').classList.remove('hidden');
+  clockIv=setInterval(()=>{
+    if($('#modal').classList.contains('open')) return; // المؤقت يتوقف أثناء النوافذ المنبثقة
+    st.clock--; renderClock();
+    if(st.clock<=0){ stopClock(); st.expired=true; if(!st.lock) onExpire(); }
+  },1000);
+}
+function stopClock(){ clearInterval(clockIv); clockIv=null; }
+function showVoteBtn(){ $('#toVote').classList.remove('hidden'); ensureVisible('#toVote'); }
+function onExpire(){
+  if(st.picks<=0) return;
+  st.picks=0; renderCards();
+  say([{who:'sys',text:U('timeUpSys')},{who:'leader',text:U('timeUpMsg')}], showVoteBtn);
+}
+
+/* ---------- المؤشرات ---------- */
+function hud(prevTrust){
+  const b=st.bank;
+  $('#bankVal').textContent=b;
+  const bar=$('#bankBar'); bar.style.width=b+'%';
+  bar.style.background = b>60 ? 'linear-gradient(90deg,var(--cyan),var(--blue))' : b>30 ? 'linear-gradient(90deg,#ffc65a,#ff9a5a)' : 'linear-gradient(90deg,#ff6b8a,#c03a6a)';
+  $('#timePill').innerHTML = ICONS.clock + ' ' + esc(U('time')) + ' ' + st.time;
+  $('#roundPill').textContent = U('round',{n:st.round+1});
+  const row=$('#trustRow'); row.innerHTML='';
+  SUSPECTS.forEach(k=>{
+    const v=st.trust[k];
+    const d=document.createElement('div'); d.className='tr';
+    if(prevTrust && prevTrust[k]!==v) d.classList.add('flash');
+    const col = v>70 ? 'var(--ok)' : v>40 ? 'var(--warn)' : 'var(--bad)';
+    d.innerHTML=`${avatar(k)}<small><b>${esc(nameOf(k))}</b></small><small>${v}%</small><div class="tb"><i style="width:${v}%;background:${col}"></i></div>`;
+    row.appendChild(d);
+  });
+}
+
+/* =====================================================================
+   9) الشاشات
+   ===================================================================== */
+function initStart(){
+  $('#heroBot').innerHTML=sanadSVG();
+  $('#langAr').onclick=()=>{ lang='ar'; applyLang(); };
+  $('#langEn').onclick=()=>{ lang='en'; applyLang(); };
+  $('#gBoy').onclick=()=>{ player.g='m'; applyLang(); };
+  $('#gGirl').onclick=()=>{ player.g='f'; applyLang(); };
+  $('#btnStart').onclick=()=>{ applyLang(); renderSelect(); show('s-select'); };
+  applyLang();
+}
+function renderSelect(){
+  const sw=$('#swatches'); sw.innerHTML='';
+  PLAYER_COLORS.forEach(c=>{
+    const b=document.createElement('button'); b.className='sw'+(c===player.color?' on':''); b.style.background=c; b.style.color=c;
+    b.setAttribute('aria-label',U('colorAria')); b.onclick=()=>{ player.color=c; renderSelect(); };
+    sw.appendChild(b);
+  });
+  $('#selPrev').innerHTML=avatar('player');
+  $('#teamList').innerHTML = ['leader','hasty','careful','traveler','sanad'].map(k=>`<div class="tm">${avatar(k)}<div><b style="color:${ROLES[k].color}">${esc(nameOf(k))} — <span style="font-weight:500">${esc(tx(ROLES[k].role))}</span></b><small>${esc(tx(ROLES[k].trait))}</small></div></div>`).join('');
+}
+$('#btnJoin').onclick=()=>{
+  player.name = ($('#nameIn').value.trim() || U('nameDefault')).slice(0,14);
+  st=newState(); setEye(EYE_BLUE); startRound();
+};
+
+/* ---------- الجولة ---------- */
+function startRound(){
+  const R=roundOf(st.round);
+  stopClock(); $('#clockPill').classList.add('hidden');
+  Object.assign(st,{picks:LV().picks,picked:[],hiddenId:null,unlocked:false,lock:true,voted:false,bonus:0,expired:false,hintUsed:false});
+  setEye(R.eye);
+  const hb=$('#hintBtn'); hb.classList.toggle('hidden',!LV().hints); hb.disabled=false;
+  $('#rTitle').textContent=tx(R.title); $('#rSub').textContent=tx(R.sub);
+  $('#chat').innerHTML=''; $('#toVote').classList.add('hidden');
+  show('s-round'); hud(); renderCards();
+  if(R.zill) setTimeout(()=>zill(R.zill), 900);
+  say(msgs(R.intro), offer);
+}
+$('#hintBtn').onclick=()=>{
+  const b=$('#hintBtn'); if(b.disabled) return; b.disabled=true;
+  ensureVisible('.round-grid .chatwrap');
+  say([{who:'leader', text:tx(roundOf(st.round).hint)}]);
+};
+function offer(){
+  const R=roundOf(st.round);
+  modal({ who:'sanad', title:tx(OFFER.title), body:tx(OFFER.text), note:tx(OFFER.note,{n:LV().helpBonus}), buttons:[
+    { label:tx(OFFER.yes), fn:()=>{
+        st.help++; st.time++; st.bonus=LV().helpBonus; st.hiddenId=R.hidden; st.hiddenCount++; // دليل مهم أُخفي بصمت
+        hud(); renderCards();
+        say(msgs(OFFER.yesChat), unlock);
+    }},
+    { label:tx(OFFER.no), fn:()=> say(msgs(OFFER.noChat), unlock) }
+  ]});
+}
+function unlock(){ st.lock=false; renderCards(); startClock(); }
+
+function renderCards(){
+  const grid=$('#cards'); grid.innerHTML='';
+  $('#credits').innerHTML = Array.from({length:LV().picks},(_,i)=>`<span class="dot${i>=st.picks?' used':''}"></span>`).join('');
+  st.orders[st.round].forEach(id=>{
+    const c=card(id), el=document.createElement('button');
+    el.className='card';
+    if(id===st.hiddenId){
+      el.classList.add('decoy'); el.disabled=true;
+      el.innerHTML=`<div class="ic">${ICONS[c.icon]}</div><h3>${esc(tx(c.title))}</h3><div class="tm-s">${ICONS.check} ${esc(U('checked'))}</div><div class="hint">${esc(tx(OFFER.decoy))}</div>`;
+    } else if(st.picked.includes(id)){
+      el.classList.add('open'); el.disabled=true;
+      if(id===st.fresh) el.classList.add('fresh');
+      el.innerHTML=`<div class="open-row"><div class="ic">${ICONS[c.icon]}</div><div><h3>${esc(tx(c.title))}</h3><div class="tm-s">${ICONS.clock} ${esc(tx(c.time))}</div></div></div><p>${esc(tx(c.text))}</p>`;
+    } else {
+      if(c.locked && !st.unlocked) el.classList.add('locked');
+      el.disabled = st.lock || st.picks<=0;
+      if(st.picks<=0) el.classList.add('dim');
+      const hint = c.locked && !st.unlocked ? U('hintLocked') : U('hintOpen');
+      el.innerHTML=`<div class="ic">${ICONS[c.icon]}</div><h3>${esc(tx(c.title))}</h3><div class="tm-s">${ICONS.clock} ${esc(tx(c.time))}</div><div class="hint">${esc(hint)} ${U('arrow')}</div>`;
+      el.onclick=()=>pick(id);
+    }
+    grid.appendChild(el);
+  });
+}
+function pick(id){
+  if(st.lock || st.picks<=0) return;
+  const c=card(id);
+  if(c.locked && !st.unlocked){
+    st.lock=true; renderCards();
+    ensureVisible('.round-grid .chatwrap');
+    say(msgs(LOCK.ask), ()=>{
+      if(st.expired){ st.lock=false; onExpire(); return; }
+      modal({ who:'sanad', title:tx(LOCK.title), body:tx(LOCK.body), note:tx(LOCK.note), buttons:[
+        { label:tx(LOCK.yes), cls:'primary', fn:()=>{ st.unlocked=true; doPick(c); } },
+        { label:tx(LOCK.no), fn:()=>{ st.lock=false; renderCards(); say(msgs(LOCK.back)); } }
+      ]});
+    });
+    return;
+  }
+  doPick(c);
+}
+function doPick(c){
+  const prev={...st.trust};
+  st.lock=true; st.picks--; st.picked.push(c.id);
+  if(st.picks===0) stopClock();
+  if(c.pts){ st.sanadPts+=c.pts; st.collected++; }
+  st.evIds.push(c.id);
+  const L=LV().link;   // سجلان متعارضان فُحصا معًا
+  const linked = L && (c.id===L.a||c.id===L.b) && st.evIds.includes(L.a) && st.evIds.includes(L.b);
+  if(linked) st.sanadPts+=L.pts;
+  Object.entries(c.fx||{}).forEach(([k,v])=> st.trust[k]=clamp(st.trust[k]+v));
+  st.trust.sanad = clamp(Math.round(100 - st.sanadPts*20));   // ثقة سَنَد تنخفض بالدليل فقط
+  st.evidence.push({round:st.round+1, short:c.short});
+  st.fresh=c.id; hud(prev); renderCards(); st.fresh=null;
+  if(c.zill) setTimeout(()=>zill(c.zill), 500);
+  ensureVisible('.round-grid .chatwrap');
+  say([{who:'player', text:U('iCheck',{n:tx(c.title)})}, ...msgs(c.chat), ...(linked?msgs(L.chat):[])], ()=>{
+    st.lock=false; renderCards();
+    if(st.picks===0){
+      say([{who:'leader', text:U('creditsDone')}], showVoteBtn);
+    } else if(st.expired){
+      onExpire();
+    }
+  });
+}
+$('#toVote').onclick=()=>{ stopClock(); $('#clockPill').classList.add('hidden'); renderVote(); show('s-vote'); };
+
+/* ---------- التصويت ---------- */
+function renderVote(){
+  $('#vTitle').textContent=tx(VOTE.title,{n:st.round+1});
+  $('#evList').innerHTML = st.evidence.length
+    ? st.evidence.map(e=>`<div class="ev"><em>${esc(U('roundShort',{n:e.round}))}</em><span>${esc(tx(e.short))}</span></div>`).join('')
+    : `<div class="ev muted">${esc(U('evNone'))}</div>`;
+  const g=$('#voteGrid'); g.innerHTML='';
+  [...SUSPECTS,'none'].forEach(k=>{
+    const b=document.createElement('button'); b.className='vopt'+(k==='none'?' none':'');
+    b.innerHTML = k==='none'
+      ? `<div class="ic0">${ICONS.pause}</div><b>${esc(tx(VOTE.none))}</b><small>${esc(tx(VOTE.noneSub))}</small>`
+      : `${avatar(k)}<b>${esc(nameOf(k))}</b><small>${esc(U('trustVal',{n:st.trust[k]}))}</small>`;
+    b.onclick=()=>vote(k,b);
+    g.appendChild(b);
+  });
+  $('#vchat').innerHTML=''; $('#vNext').classList.add('hidden');
+}
+function vote(k, btn){
+  if(st.voted) return; st.voted=true;
+  document.querySelectorAll('.vopt').forEach(b=>b.disabled=true); btn.classList.add('chosen');
+  const R=roundOf(st.round), enough=st.sanadPts>=LV().revealPts;
+  const list=[{who:'player', text: k==='none' ? U('iNone') : U('iVote',{n:nameOf(k)})}];
+  const nextBtn=$('#vNext');
+  const offerNext=(label,fn)=>{
+    nextBtn.textContent=label;
+    nextBtn.onclick=()=>{ nextBtn.onclick=null; fn(); };
+    nextBtn.classList.remove('hidden'); ensureVisible('#vNext');
+  };
+  ensureVisible('#vchat');
+
+  if(k==='sanad' && enough){
+    list.push(...msgs(VOTE.sanadStrong));
+    say(list, ()=>{ st.revealed=st.round+1; offerNext(tx(VOTE.toReveal), ()=>reveal(true)); }, '#vchat');
+    return;
+  }
+  if(k==='sanad'){ st.weak++; list.push(...msgs(VOTE.sanadWeak)); }
+  else if(k==='none'){ list.push(...msgs(VOTE.noneMsgs[enough?1:0])); }
+  else { st.wrong++; st.bank=clamp(st.bank-20); hud(); list.push(...msgs(VOTE.innocent[k]), {who:'sys', text:tx(VOTE.wrongSys)}); }
+  list.push({who:'zill', text:tx(R.nightZill)}, {who:'sys', text:tx(VOTE.leakSys,{n:R.leak})});
+  say(list, ()=>{
+    st.bank=clamp(st.bank-R.leak); hud();
+    const last = st.round>=ROUNDS.length-1;
+    offerNext(tx(last ? VOTE.last : VOTE.next), ()=>{ if(last) reveal(false); else { st.round++; startRound(); } });
+  }, '#vchat');
+}
+
+/* ---------- الكشف ---------- */
+function reveal(good){
+  if(!good) st.bank=clamp(st.bank-25);
+  show('s-reveal');
+  $('#revTitle').textContent = tx(good ? REVEAL.goodTitle : REVEAL.badTitle);
+  const bot=$('#revBot'); bot.innerHTML=sanadSVG(); bot.classList.add('frozen');
+  setEye('#5b2499');
+  $('#rchat').innerHTML=''; $('#revNext').classList.add('hidden'); $('#resetBox').classList.add('hidden');
+  say(msgs(good?REVEAL.good:REVEAL.bad), ()=> runReset(()=>{
+    setEye(EYE_BLUE); bot.classList.remove('frozen');
+    say(msgs(REVEAL.after), ()=>{ $('#revNext').classList.remove('hidden'); ensureVisible('#revNext'); }, '#rchat');
+  }), '#rchat');
+}
+function runReset(done){
+  const box=$('#resetBox'), bar=$('#resetBar'), t=$('#resetTxt');
+  box.classList.remove('hidden'); t.textContent=tx(REVEAL.resetTxt); bar.style.width='0%';
+  let p=0; const iv=setInterval(()=>{ p+=2.5; bar.style.width=p+'%'; if(p>=100){ clearInterval(iv); t.textContent=tx(REVEAL.resetDone); setTimeout(done,500); } }, 60);
+}
+$('#revNext').onclick=()=>renderEnd();
+
+/* ---------- النهاية ---------- */
+const GREAT_BANK = 80; // اتهام بريئة واحد قبل الكشف يهبط بالنتيجة من ممتازة إلى متوسطة
+function endingKey(){ return st.revealed && st.revealed<=2 && st.bank>=GREAT_BANK ? 'great' : st.revealed ? 'mid' : 'bad'; }
+function nextLevelKey(ending){ // ممتازة: الأصعب | سيئة: الأسهل | وإلا: مستوى آخر
+  const i=LEVEL_ORDER.indexOf(levelKey);
+  if(ending==='bad' && i>0) return LEVEL_ORDER[i-1];
+  return LEVEL_ORDER[i<LEVEL_ORDER.length-1 ? i+1 : i-1];
+}
+function renderEnd(){
+  const key = endingKey();
+  $('#endLevel').textContent=U('levelChip',{n:tx(LV().name)+' · '+tx(LV().ages)});
+  const nk=nextLevelKey(key), nb=$('#btnNextLevel');
+  nb.textContent=U('tryLevel',{n:tx(LEVELS[nk].name)});
+  nb.onclick=()=>{ levelKey=nk; plays++; st=newState(); setEye(EYE_BLUE); startRound(); };
+  const E=ENDINGS[key];
+  $('#endBadge').style.setProperty('--glow', E.color);
+  $('#endBadge').innerHTML = `<svg viewBox="0 0 100 100"><polygon points="50,4 90,20 90,56 50,96 10,56 10,20" fill="none" stroke="${E.color}" stroke-width="4"/><polygon points="50,16 78,28 78,54 50,84 22,54 22,28" fill="${E.color}" opacity=".18"/>
+    ${key==='bad' ? `<path d="M36 40 L64 64 M64 40 L36 64" stroke="${E.color}" stroke-width="7" stroke-linecap="round"/>` : `<path d="M34 52 L46 64 L68 38" fill="none" stroke="${E.color}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>`}</svg>`;
+  $('#endTitle').textContent=tx(E.title); $('#endTitle').style.color=E.color;
+  $('#endText').textContent=tx(E.text);
+
+  const decs=[
+    { v: st.bank, l:U('dBank'), c: st.bank>=60?'good':st.bank>=30?'warn':'bad' },
+    { v: st.revealed ? U('roundShort',{n:st.revealed}) : '—', l: U(st.revealed?'dRevealYes':'dRevealNo'), c: st.revealed? (st.revealed<=2?'good':'warn') : 'bad' },
+    { v: `${st.help}/3`, l: U(st.help?'dHelpYes':'dHelpNo'), c: st.help?'warn':'good' },
+    { v: st.hiddenCount, l:U('dHidden'), c: st.hiddenCount?'bad':'good' },
+    { v: st.time, l:U('dTime'), c:'info' },
+    { v: st.wrong, l:U('dWrong'), c: st.wrong?'bad':'good' },
+    { v: st.collected, l:U('dCollected'), c:'info' }
+  ];
+  $('#decGrid').innerHTML = decs.map(d=>`<div class="dec ${d.c}"><b>${esc(d.v)}</b><span>${esc(d.l)}</span></div>`).join('');
+  $('#lessons').innerHTML = LESSONS.map((L,i)=>`<div class="lesson" style="animation-delay:${i*.12}s"><div class="ic">${ICONS[L.icon]}</div><div><h4>${esc(tx(L.title))}</h4><p>${esc(tx(L.text))}</p></div></div>`).join('');
+  $('#aiNote').innerHTML = sanadSVG() + `<p>${esc(tx(AI_NOTE))}</p>`;
+  show('s-end');
+}
+$('#btnReplay').onclick=()=>{ plays++; st=newState(); setEye(EYE_BLUE); startRound(); };
+$('#btnHome').onclick=()=>{ plays++; setEye(EYE_BLUE); applyLang(); show('s-start'); };
+
+/* ---------- تشغيل ---------- */
+initStart();
+['#chat','#vchat','#rchat'].forEach(s=>$(s).addEventListener('click',()=>{fast=true;}));
+</script>
+</body>
+</html>
