@@ -4,7 +4,7 @@
 
 **لعبة تعليمية تعاونية عن الأمن السيبراني للفئة العمرية 10–18 سنة.**
 
-من تطوير **ديما بنت ماجد المعارك**، مبرمجة سعودية 🇸🇦
+من تطوير **ديما بنت ماجد المعارك**، مبرمجة سعودية :saudi_arabia:
 
 ### ▶️ [العب الآن](https://deema-majid.github.io/mundass/)
 
@@ -45,7 +45,7 @@
 
 **A cooperative cybersecurity learning game for ages 10–18.**
 
-Created by **Deema Majid AlMaarik**, a Saudi developer 🇸🇦
+Created by **Deema Majid AlMaarik**, a Saudi developer :saudi_arabia:
 
 ### ▶️ [Play now](https://deema-majid.github.io/mundass/)
 
