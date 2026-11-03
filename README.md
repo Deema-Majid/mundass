@@ -4,6 +4,8 @@
 
 **لعبة تعليمية تعاونية عن الأمن السيبراني للفئة العمرية 10–18 سنة.**
 
+من تطوير **ديما بنت ماجد المعارك**، مبرمجة سعودية 🇸🇦
+
 ### ▶️ [العب الآن](https://deema-majid.github.io/mundass/)
 
 بنك «الواحة الرقمي» تتسرّب بياناته كل ليلة. تنضمّ إلى فريق الأمن مع زملائك ومع «سَنَد»، الروبوت المساعد الذي يثق به الجميع، وتجمع الأدلة من السجلات لتكشف المندسّ قبل فوات الأوان.
@@ -29,8 +31,11 @@
 3. المصادقة الثنائية
 4. التحديثات من المصادر الرسمية فقط
 
-## تعديل المحتوى
-كل النصوص والأدلة والمستويات موجودة داخل `index.html` في كائنات JavaScript، مثل `ROUNDS` و`LEVELS` و`UI`، ليسهل تعديلها.
+## الحقوق
+© 2026 ديما بنت ماجد المعارك. **جميع الحقوق محفوظة.**
+يُسمح بلعب اللعبة عبر رابطها الرسمي فقط. لا يجوز نسخها أو تعديلها أو نشرها أو بيعها دون إذن كتابي من المؤلفة. التفاصيل في ملف [LICENSE](LICENSE).
+
+جميع الأسماء والعناوين والبيانات في اللعبة خيالية.
 
 </div>
 
@@ -38,18 +43,31 @@
 
 # Mundass 🛡️
 
-**A cooperative cybersecurity game for ages 10–18, in Arabic and English.**
+**A cooperative cybersecurity learning game for ages 10–18.**
+
+Created by **Deema Majid AlMaarik**, a Saudi developer 🇸🇦
 
 ### ▶️ [Play now](https://deema-majid.github.io/mundass/)
 
-Customer data at Oasis Digital Bank leaks every night. Join the security team and Sanad, the friendly assistant robot everyone trusts, inspect the logs, and expose the insider before it is too late.
+Customer data at Oasis Digital Bank leaks every night. Join the security team with your teammates and Sanad, the friendly assistant robot everyone trusts, gather evidence from the logs, and expose the insider before it is too late.
 
-**Trust, but verify:** AI is a great tool, as long as we check its work.
+The message: **Trust, but verify.** AI is a great tool, as long as we review and check its work.
 
-- Arabic and English, with right-to-left and left-to-right layouts
-- Boy or girl player, with matching wording and team
-- Three levels: Beginner (10–12), Intermediate (13–15), Advanced (16–18)
-- Three endings, a decisions summary and four lesson cards
-- A single HTML file that runs on phones, tablets and computers with nothing to install
+## Features
+- **Two languages:** Arabic and English, with the correct page direction for each.
+- **Boy or girl:** the wording and the team change to match the player's choice.
+- **Three levels:** Beginner (10–12), Intermediate (13–15) and Advanced (16–18), each with different logs, time limits and difficulty.
+- **Three endings** based on the player's decisions, with a "Your decisions" screen and lesson cards.
+- **A single file** that runs on phones, tablets and computers, with nothing to install and no sign-up.
+
+## What players learn
+1. Trust, but verify
+2. Least privilege
+3. Two-factor authentication
+4. Updates from official sources only
+
+## Copyright
+© 2026 Deema Majid AlMaarik. **All rights reserved.**
+You may play the game through its official link only. You may not copy, modify, publish or sell it without written permission from the author. See [LICENSE](LICENSE) for details.
 
 All names, addresses and data in the game are fictional.
