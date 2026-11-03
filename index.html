@@ -58,7 +58,7 @@ h2{font-size:1.35rem;font-weight:800}
 /* ---------- start ---------- */
 .hero{text-align:center;padding-top:2vh}
 .seg{display:inline-flex;gap:4px;padding:4px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid var(--line)}
-.seg button{border:0;background:transparent;padding:7px 18px;border-radius:999px;font-weight:700;font-size:.95rem;color:var(--muted);min-height:38px;transition:.2s}
+.seg button{border:0;background:transparent;padding:7px 18px;border-radius:999px;font-weight:700;font-size:.95rem;color:var(--muted);min-height:44px;transition:.2s}
 .seg button.on{background:linear-gradient(135deg,var(--violet),var(--blue));color:#fff}
 .logo{font-size:clamp(3.2rem,15vw,5.4rem);font-weight:900;letter-spacing:1px;line-height:1.15;position:relative;display:inline-block;margin-top:6px;
   background:linear-gradient(135deg,#fff,var(--cyan) 40%,var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent;
@@ -219,7 +219,7 @@ input.txt:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(63,240,255,.1
 .reset{max-width:360px;margin:10px auto;text-align:center}
 .reset .bar{height:12px}
 .reset .bar i{width:0;background:linear-gradient(90deg,var(--violet),var(--cyan));transition:width .1s linear}
-.reset small{color:var(--muted)}
+.reset small{display:block;color:var(--muted)}
 #rchat{height:auto;max-height:none;min-height:60px}
 
 /* ---------- end ---------- */
@@ -280,6 +280,7 @@ input.txt:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(63,240,255,.1
 .btn.small{min-height:40px;padding:6px 16px;font-size:.9rem}
 .level-chip{display:block;width:-webkit-fit-content;width:fit-content;margin:0 auto 10px;padding:4px 14px;border-radius:99px;border:1px solid var(--line);background:var(--panel2);font-weight:700;font-size:.9rem}
 .footer-note{text-align:center;font-size:.75rem;color:var(--muted);margin-top:26px;opacity:.7}
+.credit{text-align:center;font-size:.8rem;font-weight:700;color:var(--muted);margin:18px auto 0;max-width:440px;line-height:1.6}
 .noscript{padding:24px;text-align:center}
 @media(max-height:700px){.hud-cap{display:none}.tr .av{width:24px;height:24px}.trust{margin-top:4px}.chat{height:240px}}
 @media(max-height:500px){.m-av,.m-av .av{width:52px;height:52px}.mbox{padding:12px 14px}.mbtns{grid-template-columns:1fr 1fr}.mbox .mb{margin-bottom:8px}}
@@ -327,6 +328,7 @@ input.txt:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(63,240,255,.1
         <summary data-i18n="howTitle"></summary>
         <ul id="howList"></ul>
       </details>
+      <p class="credit" data-i18n="credit"></p>
     </div>
   </section>
 
@@ -410,6 +412,7 @@ input.txt:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(63,240,255,.1
       <button class="btn wide" id="btnHome" data-i18n="home"></button>
     </div>
     <p class="footer-note" data-i18n="footer"></p>
+    <p class="credit" data-i18n="credit"></p>
   </section>
 </div>
 
@@ -525,7 +528,7 @@ const UI = {
   levelChip:{ ar:'مستواك: {n}', en:'Your level: {n}' },
   tryLevel:{ ar:'{p:جرّبي|جرّب} مستوى {n}', en:'Try the {n} level' },
   startBtn:{ ar:'بدء المهمة', en:'Start the mission' },
-  chips:{ ar:['تعاونية','3 جولات','10–18 سنة','5 دقائق'], en:['Co-op','3 rounds','Ages 10–18','5 minutes'] },
+  chips:{ ar:['تعاونية','3 جولات','10-18 سنة','5 دقائق'], en:['Co-op','3 rounds','Ages 10–18','5 minutes'] },
   howTitle:{ ar:'طريقة اللعب', en:'How to play' },
   how:{ ar:[
       'في كل جولة عدة بطاقات سجلات، والرصيد يسمح بفحص بطاقتين فقط قبل انتهاء الوقت.',
@@ -576,6 +579,7 @@ const UI = {
   replay:{ ar:'إعادة اللعب', en:'Play again' },
   home:{ ar:'تغيير اللغة أو الشخصية', en:'Change language or character' },
   footer:{ ar:'«مندسّ» نموذج أولي تعليمي. جميع الأسماء والعناوين والبيانات خيالية.', en:'Mundass is an educational prototype. All names, addresses and data are fictional.' },
+  credit:{ ar:'© 2026 ديما بنت ماجد المعارك — مبرمجة سعودية — جميع الحقوق محفوظة', en:'© 2026 Deema Majid AlMaarik — Saudi developer — All rights reserved' },
   dBank:{ ar:'سلامة البنك النهائية', en:'Final Bank Safety' },
   dRevealYes:{ ar:'كُشف الاختراق في هذه الجولة', en:'Round in which the hack was exposed' },
   dRevealNo:{ ar:'لم يُكشف الاختراق في الوقت المناسب', en:'The hack was not exposed in time' },
@@ -771,7 +775,7 @@ const ROUNDS = [
    ===================================================================== */
 const LEVELS = {
   easy: {
-    name:{ ar:'مبتدئ', en:'Beginner' }, ages:{ ar:'10–12 سنة', en:'Ages 10–12' },
+    name:{ ar:'مبتدئ', en:'Beginner' }, ages:{ ar:'10-12 سنة', en:'Ages 10–12' },
     desc:{ ar:'3 سجلات في كل جولة، و90 ثانية، وتلميحات عند الحاجة.', en:'3 logs each round, 90 seconds, and hints if you need them.' },
     picks:2, seconds:90, helpBonus:10, hints:true, revealPts:3,
     eyes:['#a87bff','#8a4fe0','#6a2fc4'],
@@ -881,7 +885,7 @@ const LEVELS = {
   },
 
   mid: {
-    name:{ ar:'متوسط', en:'Intermediate' }, ages:{ ar:'13–15 سنة', en:'Ages 13–15' },
+    name:{ ar:'متوسط', en:'Intermediate' }, ages:{ ar:'13-15 سنة', en:'Ages 13–15' },
     desc:{ ar:'4 سجلات في كل جولة، و60 ثانية، ودليل مضلِّل واحد.', en:'4 logs each round, 60 seconds, and one misleading clue.' },
     picks:2, seconds:60, helpBonus:10, hints:false, revealPts:2,
     eyes:['#7fc4ff','#9a86ff','#6a2fc4'],
@@ -902,7 +906,7 @@ const LEVELS = {
   },
 
   hard: {
-    name:{ ar:'متقدم', en:'Advanced' }, ages:{ ar:'16–18 سنة', en:'Ages 16–18' },
+    name:{ ar:'متقدم', en:'Advanced' }, ages:{ ar:'16-18 سنة', en:'Ages 16–18' },
     desc:{ ar:'5 سجلات في كل جولة، و45 ثانية، ودليلان مضلِّلان، وسجلان متعارضان، وبلا تلميحات.', en:'5 logs each round, 45 seconds, two misleading clues, two conflicting logs, and no hints.' },
     picks:2, seconds:45, helpBonus:10, hints:false, revealPts:2.5,
     eyes:[EYE_BLUE,EYE_BLUE,'#6a2fc4'],
@@ -1326,9 +1330,10 @@ function modal({who, title, body, note, buttons}){
   m.querySelector('.mb').innerHTML = esc(body) + (note ? `<small>${esc(note)}</small>` : '');
   const bx=m.querySelector('.mbtns'); bx.innerHTML='';
   let answered=false; // يمنع تنفيذ الاختيار مرتين عند الضغط المزدوج
+  const openedAt=performance.now(); // يتجاهل ضغطة بدأت قبل ظهور النافذة (مثل تسريع الدردشة)
   buttons.forEach(b=>{
     const el=document.createElement('button'); el.className='btn '+(b.cls||''); el.textContent=b.label;
-    el.onclick=()=>{ if(answered) return; answered=true; m.classList.remove('open'); setTimeout(b.fn, 200); };
+    el.onclick=()=>{ if(answered || performance.now()-openedAt<600) return; answered=true; m.classList.remove('open'); setTimeout(b.fn, 200); };
     bx.appendChild(el);
   });
   m.classList.add('open');
